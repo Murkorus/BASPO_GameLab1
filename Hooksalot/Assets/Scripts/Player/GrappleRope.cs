@@ -3,7 +3,7 @@ using UnityEngine;
 public class GrappleRope : MonoBehaviour
 {
     [SerializeField] GrapplingHook hookScript;
-    LineRenderer lineRenderer;
+    private LineRenderer lineRenderer;
     private void Start()
     {
         lineRenderer = GetComponent<LineRenderer>();

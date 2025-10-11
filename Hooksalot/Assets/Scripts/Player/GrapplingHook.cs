@@ -11,12 +11,18 @@ public class GrapplingHook : MonoBehaviour
 
     [Header("References")]
     [SerializeField] GameObject grapplingHook;
-    [SerializeField] SpringJoint2D springJoint;
+    private SpringJoint2D springJoint;
     
 
     private Vector2 grapplePoint;
     [HideInInspector] public bool hookLaunched;
+    [HideInInspector] public bool isReeling;
     public float springDistance;
+
+    private void Start()
+    {
+        springJoint = GetComponent<SpringJoint2D>();
+    }
 
     private void Update()
     {
@@ -33,6 +39,11 @@ public class GrapplingHook : MonoBehaviour
         {
             springDistance = Mathf.Clamp(springDistance - Time.deltaTime * reelingSpeed, 0.05f, maxDistance);
             springJoint.distance = springDistance;
+            isReeling = true;
+        }
+        else
+        {
+            isReeling = false;
         }
     }
 
@@ -61,5 +72,6 @@ public class GrapplingHook : MonoBehaviour
         grapplingHook.transform.position = grapplePoint;
         springJoint.enabled = hookLaunched;
         springJoint.distance = springDistance;
+        grapplingHook.transform.parent = hookLaunched ? null : transform;
     }
 }
