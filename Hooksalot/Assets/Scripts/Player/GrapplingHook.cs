@@ -28,10 +28,12 @@ public class GrapplingHook : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            SetGrapplePoint();
-            SwitchHookState();
+            if (SetGrapplePoint())
+            {
+                SwitchHookState();
+            }
         }
-        if (Input.GetMouseButtonUp(0))
+        if (Input.GetMouseButtonUp(0) && hookLaunched)
         {
             SwitchHookState();
         }
@@ -47,8 +49,9 @@ public class GrapplingHook : MonoBehaviour
         }
     }
 
-    private void SetGrapplePoint()
+    private bool SetGrapplePoint() // Returns if the grapple was successful
     {
+        bool successfulGrapple = false;
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Vector2 grappleDirection = mousePos - (Vector2)grapplePivot.position;
         Vector2 tempGrapplePoint = mousePos;
@@ -56,6 +59,7 @@ public class GrapplingHook : MonoBehaviour
         if (hit)
         {
             tempGrapplePoint = hit.point;
+            successfulGrapple = true;
         }
         else if (useMaxDistance)
         {
@@ -63,6 +67,7 @@ public class GrapplingHook : MonoBehaviour
         }
         grapplePoint = tempGrapplePoint;
         springDistance = Vector2.Distance(transform.position, grapplePoint);
+        return successfulGrapple;
     }
 
     private void SwitchHookState()
