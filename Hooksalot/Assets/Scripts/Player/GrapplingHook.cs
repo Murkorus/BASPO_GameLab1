@@ -26,6 +26,11 @@ public class GrapplingHook : MonoBehaviour
 
     private void Update()
     {
+        if (GameManager.playerIsDead)
+        {
+            return;
+        }
+
         if (Input.GetMouseButtonDown(0))
         {
             if (SetGrapplePoint())

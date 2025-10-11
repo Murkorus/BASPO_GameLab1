@@ -31,6 +31,11 @@ public class Movement : MonoBehaviour
 
     private void Update()
     {
+        if (GameManager.playerIsDead)
+        {
+            return;
+        }
+
         isGrounded = IsGrounded();
 
         GetMovementInput();
