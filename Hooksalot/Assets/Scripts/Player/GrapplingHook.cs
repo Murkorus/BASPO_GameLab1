@@ -8,6 +8,7 @@ public class GrapplingHook : MonoBehaviour
     [SerializeField] bool useMaxDistance;
     [SerializeField] float maxDistance;
     [SerializeField] float reelingSpeed;
+    [SerializeField] float hookCooldown;
 
     [Header("References")]
     [SerializeField] GameObject grapplingHook;
@@ -18,6 +19,7 @@ public class GrapplingHook : MonoBehaviour
     [HideInInspector] public bool hookLaunched;
     [HideInInspector] public bool isReeling;
     public float springDistance;
+    private float timeSinceUnhooked;
 
     private void Start()
     {
@@ -26,6 +28,11 @@ public class GrapplingHook : MonoBehaviour
 
     private void Update()
     {
+        if (!hookLaunched)
+        {
+            timeSinceUnhooked += Time.deltaTime;
+        }
+
         if (GameManager.playerIsDead)
         {
             return;
@@ -33,7 +40,7 @@ public class GrapplingHook : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            if (SetGrapplePoint())
+            if (SetGrapplePoint() && timeSinceUnhooked >= hookCooldown)
             {
                 SwitchHookState();
             }
@@ -78,6 +85,7 @@ public class GrapplingHook : MonoBehaviour
     private void SwitchHookState()
     {
         // Switch between launched and retracted states
+        timeSinceUnhooked = 0;
         hookLaunched = !hookLaunched;
         grapplingHook.transform.position = grapplePoint;
         springJoint.enabled = hookLaunched;

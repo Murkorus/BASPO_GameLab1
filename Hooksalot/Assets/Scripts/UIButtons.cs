@@ -6,6 +6,7 @@ public class UIButtons : MonoBehaviour
     public void ReloadCurrentScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name.ToString());
+        GameManager.playerIsDead = false;
     }
 
     public void LoadMainMenu()
@@ -16,6 +17,7 @@ public class UIButtons : MonoBehaviour
     public void LoadGame()
     {
         SceneManager.LoadScene(1);
+        GameManager.playerIsDead = false;
     }
 
     public void QuitGame()
