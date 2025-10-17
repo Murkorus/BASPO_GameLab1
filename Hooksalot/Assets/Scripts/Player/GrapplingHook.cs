@@ -72,8 +72,8 @@ public class GrapplingHook : MonoBehaviour
                     // Solution: Make a bool that is set here instead of calling SwitchHookState().
                     // The bool will be checked in an if-statement at the top of update, and update a timer that counts down until it then calls SwitchHookState from there.
 
-                    //SwitchHookState();
-                    isHookBeingLaunched = true;
+                    SwitchHookState();
+                    //isHookBeingLaunched = true;
                 }
             }
             
