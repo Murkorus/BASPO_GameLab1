@@ -8,5 +8,19 @@ public class Platform : MonoBehaviour
     // Also make a "checkpoint" platform that never breaks.
     public float durability;
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        
+
+        if (GameManager.playerRB.linearVelocity.magnitude > durability)
+        {
+            transform.parent.gameObject.SetActive(false);
+            Debug.Log("Broke " + gameObject.name);
+            
+        }
+        Debug.Log("Collision with " + gameObject.name);
+    }
+
+    
 
 }
