@@ -56,7 +56,7 @@ public class SpawnPlatforms : MonoBehaviour
     {
         // Calculate the possible spawn area for the y-axis
         Vector2 spawnZone = new Vector2(player.transform.position.y + spawnHeight - platformYOffsetLimit, player.transform.position.y + spawnHeight + platformYOffsetLimit);
-        Debug.Log(spawnZone);
+        //Debug.Log(spawnZone);
         for(int i = 0; i < disallowedZones.Length; i++)
         {
             // If either the bottom or the top value of the spawnZone is between the values of the disallowed zone, then the platform should not spawn.
