@@ -40,6 +40,7 @@ public class GrapplingHook : MonoBehaviour
             {
                 isHookBeingLaunched = false;
                 hookLaunchDistanceTraveled = 0;
+                springDistance = Vector2.Distance(transform.position, grapplePoint);
                 SwitchHookState();
             }
             else if(hookLaunchDistanceTraveled > maxDistance) // If the hook has extended further than the maximum distance, the grapple has failed.
@@ -72,8 +73,10 @@ public class GrapplingHook : MonoBehaviour
                     // Solution: Make a bool that is set here instead of calling SwitchHookState().
                     // The bool will be checked in an if-statement at the top of update, and update a timer that counts down until it then calls SwitchHookState from there.
 
-                    SwitchHookState();
-                    //isHookBeingLaunched = true;
+                    //SwitchHookState();
+                    grapplingHook.transform.position = grapplePoint;
+                    grapplingHook.transform.parent = hookLaunched ? null : transform;
+                    isHookBeingLaunched = true;
                 }
             }
             
@@ -81,6 +84,11 @@ public class GrapplingHook : MonoBehaviour
         if (Input.GetMouseButtonUp(0) && hookLaunched)
         {
             SwitchHookState();
+        }
+        else if(Input.GetMouseButtonUp(0) && isHookBeingLaunched)
+        {
+            hookLaunchDistanceTraveled = 0;
+            isHookBeingLaunched = false;
         }
         if (Input.GetMouseButton(1))
         {
@@ -120,9 +128,9 @@ public class GrapplingHook : MonoBehaviour
         // Switch between launched and retracted states
         timeSinceUnhooked = 0;
         hookLaunched = !hookLaunched;
-        grapplingHook.transform.position = grapplePoint;
         springJoint.enabled = hookLaunched;
         springJoint.distance = springDistance;
+        grapplingHook.transform.position = grapplePoint;
         grapplingHook.transform.parent = hookLaunched ? null : transform;
     }
 }

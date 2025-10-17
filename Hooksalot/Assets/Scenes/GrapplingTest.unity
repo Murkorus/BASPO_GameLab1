@@ -327,11 +327,14 @@ MonoBehaviour:
   useMaxDistance: 1
   maxDistance: 12
   reelingSpeed: 8
-  hookCooldown: 1
+  hookCooldown: 0.5
+  hookLaunchSpeed: 30
   grapplingHook: {fileID: 844437480}
   hookLaunched: 0
   isReeling: 0
   springDistance: 0
+  isHookBeingLaunched: 0
+  hookLaunchDistanceTraveled: 0
 --- !u!114 &43730597
 MonoBehaviour:
   m_ObjectHideFlags: 0
