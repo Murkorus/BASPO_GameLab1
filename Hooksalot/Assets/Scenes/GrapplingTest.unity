@@ -329,6 +329,8 @@ MonoBehaviour:
   reelingSpeed: 8
   hookCooldown: 0.5
   hookLaunchSpeed: 30
+  chainBreakForce: 9
+  chainBreakTime: 0.1
   grapplingHook: {fileID: 844437480}
   hookLaunched: 0
   isReeling: 0

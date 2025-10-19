@@ -11,10 +11,13 @@ public class GrapplingHook : MonoBehaviour
     [SerializeField] float reelingSpeed;
     [SerializeField] float hookCooldown;
     [SerializeField] float hookLaunchSpeed; // How many units per second does the hook travel while in the process of being launched?
+    [SerializeField] float chainBreakForce;
+    [SerializeField] float chainBreakTime; // How long can the chain stay attached before it breaks when a critical force has been applied?
 
     [Header("References")]
     [SerializeField] GameObject grapplingHook;
     private SpringJoint2D springJoint;
+    private Rigidbody2D rb;
     
 
     private Vector2 grapplePoint;
@@ -24,15 +27,25 @@ public class GrapplingHook : MonoBehaviour
     private float timeSinceUnhooked;
     [HideInInspector] public bool isHookBeingLaunched;
     [HideInInspector] public float hookLaunchDistanceTraveled; // For keeping track of how far the hook has travled between frames when it's being launched.
+    private bool doChainBreak;
+    private float chainBreakTimeTracker;
 
     private void Start()
     {
+        rb = GetComponent<Rigidbody2D>();
         springJoint = GetComponent<SpringJoint2D>();
     }
 
+    // Clean this up a bit later. Currently a lot of functionality from the SwitchHook() function was put here and there as part of making the chain visually extend when grappling.
+    // Perhaps make a new function with similar functionality to the SwitchHookState() function but for the in-between part where the hook is being launched.
     private void Update()
     {
-        Debug.Log(hookLaunchDistanceTraveled);
+        if (GameManager.playerIsDead) // Prevent input if the player has died (to avoid post-mortem shenanigans)
+        {
+            return;
+        }
+
+        //Debug.Log(hookLaunchDistanceTraveled);
         if (isHookBeingLaunched)
         {
             hookLaunchDistanceTraveled += hookLaunchSpeed * Time.deltaTime;
@@ -55,9 +68,21 @@ public class GrapplingHook : MonoBehaviour
             timeSinceUnhooked += Time.deltaTime;
         }
 
-        if (GameManager.playerIsDead)
+        if(hookLaunched && !doChainBreak)
         {
-            return;
+            doChainBreak = CheckChainBreak();
+        }
+
+        if (doChainBreak)
+        {
+            chainBreakTimeTracker += Time.deltaTime;
+        }
+
+        if(doChainBreak && chainBreakTimeTracker > chainBreakTime)
+        {
+            doChainBreak = false;
+            chainBreakTimeTracker = 0;
+            SwitchHookState();
         }
 
         if (Input.GetMouseButtonDown(0))
@@ -132,5 +157,23 @@ public class GrapplingHook : MonoBehaviour
         springJoint.distance = springDistance;
         grapplingHook.transform.position = grapplePoint;
         grapplingHook.transform.parent = hookLaunched ? null : transform;
+    }
+
+    // Returns whether or not the chain should break
+    private bool CheckChainBreak()
+    {
+        Vector2 chainVector = (Vector2)transform.position - grapplePoint; // Vector pointing from the grapple point to the player, magnitude is length between those points.
+        chainVector.Normalize();
+        // Calculate dot product of player velocity and chainVector to find out if the chain should break
+        float dotProduct = rb.linearVelocity.x * chainVector.x + rb.linearVelocity.y * chainVector.y;
+        if (dotProduct > chainBreakForce)
+        {
+            Debug.Log($"Chain broke at velocity {rb.linearVelocity.magnitude}, as it exceeded the limit of {chainBreakForce}.");
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 }
