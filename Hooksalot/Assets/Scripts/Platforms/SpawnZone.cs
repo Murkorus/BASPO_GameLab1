@@ -27,4 +27,19 @@ public class SpawnZone : MonoBehaviour
         GetComponent<SpriteRenderer>().enabled = false;
         SpawnerManager.spawnZones.Add(this);
     }
+
+    private void UpdateNoSpawnZone()
+    {
+
+    }
+
+    public void SpawnPlatform()
+    {
+
+    }
+
+    public void SpawnEnemy()
+    {
+
+    }
 }

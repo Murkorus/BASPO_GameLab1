@@ -5,6 +5,7 @@ public class GameManager : MonoBehaviour
     public static bool debugMode;
     public static bool playerIsDead;
     public static float score;
+    public static float playerMaxY;
 
     public static Rigidbody2D playerRB;
 
@@ -18,5 +19,7 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         debugMode = debug;
+
+        playerMaxY = playerRB.transform.position.y > playerMaxY ? playerRB.transform.position.y : playerMaxY;
     }
 }

@@ -22,6 +22,18 @@ public class SpawnerManager : MonoBehaviour
     [SerializeField] float timeBetweenWaves;
     [SerializeField] Vector2 waveSizeMinMax;
 
+    private float spawnNextPlatformAt;
+
+    private void Update()
+    {
+        // Keep track of the player's max achived y-coordinate.
+        // When the player's max achieved y-coordinate equals or exceeds the "spawn next playform at y-coordinate" number, spawn a batch of platforms, and increase that number by X, where X is the spawnInterval.
+        if(GameManager.playerMaxY >= spawnNextPlatformAt)
+        {
+            SpawnPlatform();
+            spawnNextPlatformAt += spawnInterval;
+        }
+    }
     private void SpawnPlatform()
     {
         // First, loop over every SpawnZone to see which one is currently active.
