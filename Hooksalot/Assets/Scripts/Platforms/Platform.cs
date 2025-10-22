@@ -7,10 +7,16 @@ public class Platform : MonoBehaviour
     // Make different kinds of platforms that can withstand more or less force before they break.
     // Also make a "checkpoint" platform that never breaks.
 
-    private float durability; // The speed threshold at which the platform breaks, Average player speed is around 10-20
+    public float durability; // The speed threshold at which the platform breaks, Average player speed is around 10-20
     private float marblePlatform = Mathf.Infinity;
     private float stoneBrickPlatform = 13;
     private float woodPlatform = 10;
+
+    [Header("References")]
+    [SerializeField] BoxCollider2D triggerCollider;
+    [SerializeField] BoxCollider2D platformCollider;
+    [SerializeField] SpriteRenderer texture;
+    [SerializeField] LineRenderer outline;
 
     private void Start()
     {
@@ -38,7 +44,7 @@ public class Platform : MonoBehaviour
     {
         if (GameManager.playerRB.linearVelocity.magnitude > durability)
         {
-            transform.parent.gameObject.SetActive(false);
+            gameObject.SetActive(false);
             Debug.Log("Broke " + gameObject.name);
             GrapplingHook hook = collision.GetComponent<GrapplingHook>();
             if (hook != null && hook.hookLaunched)
@@ -47,5 +53,19 @@ public class Platform : MonoBehaviour
             }
         }
         Debug.Log("Collision with " + gameObject.name);
+    }
+
+    public void UpdateScale(Vector2 scale)
+    {
+        triggerCollider.size *= scale;
+        platformCollider.size *= scale;
+        texture.size *= scale;
+        outline.SetPositions(new Vector3[]
+        {
+            new Vector3(transform.position.x + scale.x * 0.5f, transform.position.y + scale.y * 0.5f),
+            new Vector3(transform.position.x + scale.x * 0.5f, transform.position.y - scale.y * 0.5f),
+            new Vector3(transform.position.x - scale.x * 0.5f, transform.position.y - scale.y * 0.5f),
+            new Vector3(transform.position.x - scale.x * 0.5f, transform.position.y + scale.y * 0.5f)
+        });
     }
 }
