@@ -183,9 +183,21 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 5902698872513668528, guid: f1a197c2b380fa146b739544cdc39321, type: 3}
+      propertyPath: m_TagString
+      value: MarblePlatform
+      objectReference: {fileID: 0}
     - target: {fileID: 5976627618292896211, guid: f1a197c2b380fa146b739544cdc39321, type: 3}
       propertyPath: durability
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6378057620939684888, guid: f1a197c2b380fa146b739544cdc39321, type: 3}
+      propertyPath: m_Size.x
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6378057620939684888, guid: f1a197c2b380fa146b739544cdc39321, type: 3}
+      propertyPath: m_Size.y
+      value: 1.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -513,9 +525,21 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 5902698872513668528, guid: f1a197c2b380fa146b739544cdc39321, type: 3}
+      propertyPath: m_TagString
+      value: MarblePlatform
+      objectReference: {fileID: 0}
     - target: {fileID: 5976627618292896211, guid: f1a197c2b380fa146b739544cdc39321, type: 3}
       propertyPath: durability
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6378057620939684888, guid: f1a197c2b380fa146b739544cdc39321, type: 3}
+      propertyPath: m_Size.x
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6378057620939684888, guid: f1a197c2b380fa146b739544cdc39321, type: 3}
+      propertyPath: m_Size.y
+      value: 1.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -637,9 +661,21 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 5902698872513668528, guid: f1a197c2b380fa146b739544cdc39321, type: 3}
+      propertyPath: m_TagString
+      value: MarblePlatform
+      objectReference: {fileID: 0}
     - target: {fileID: 5976627618292896211, guid: f1a197c2b380fa146b739544cdc39321, type: 3}
       propertyPath: durability
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6378057620939684888, guid: f1a197c2b380fa146b739544cdc39321, type: 3}
+      propertyPath: m_Size.x
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6378057620939684888, guid: f1a197c2b380fa146b739544cdc39321, type: 3}
+      propertyPath: m_Size.y
+      value: 1.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -706,9 +742,21 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 5902698872513668528, guid: f1a197c2b380fa146b739544cdc39321, type: 3}
+      propertyPath: m_TagString
+      value: MarblePlatform
+      objectReference: {fileID: 0}
     - target: {fileID: 5976627618292896211, guid: f1a197c2b380fa146b739544cdc39321, type: 3}
       propertyPath: durability
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6378057620939684888, guid: f1a197c2b380fa146b739544cdc39321, type: 3}
+      propertyPath: m_Size.x
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6378057620939684888, guid: f1a197c2b380fa146b739544cdc39321, type: 3}
+      propertyPath: m_Size.y
+      value: 1.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -948,9 +996,21 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 5902698872513668528, guid: f1a197c2b380fa146b739544cdc39321, type: 3}
+      propertyPath: m_TagString
+      value: MarblePlatform
+      objectReference: {fileID: 0}
     - target: {fileID: 5976627618292896211, guid: f1a197c2b380fa146b739544cdc39321, type: 3}
       propertyPath: durability
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6378057620939684888, guid: f1a197c2b380fa146b739544cdc39321, type: 3}
+      propertyPath: m_Size.x
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6378057620939684888, guid: f1a197c2b380fa146b739544cdc39321, type: 3}
+      propertyPath: m_Size.y
+      value: 1.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1290,9 +1350,21 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 5902698872513668528, guid: f1a197c2b380fa146b739544cdc39321, type: 3}
+      propertyPath: m_TagString
+      value: MarblePlatform
+      objectReference: {fileID: 0}
     - target: {fileID: 5976627618292896211, guid: f1a197c2b380fa146b739544cdc39321, type: 3}
       propertyPath: durability
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6378057620939684888, guid: f1a197c2b380fa146b739544cdc39321, type: 3}
+      propertyPath: m_Size.x
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6378057620939684888, guid: f1a197c2b380fa146b739544cdc39321, type: 3}
+      propertyPath: m_Size.y
+      value: 1.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1929,9 +2001,21 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 5902698872513668528, guid: f1a197c2b380fa146b739544cdc39321, type: 3}
+      propertyPath: m_TagString
+      value: MarblePlatform
+      objectReference: {fileID: 0}
     - target: {fileID: 5976627618292896211, guid: f1a197c2b380fa146b739544cdc39321, type: 3}
       propertyPath: durability
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6378057620939684888, guid: f1a197c2b380fa146b739544cdc39321, type: 3}
+      propertyPath: m_Size.x
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6378057620939684888, guid: f1a197c2b380fa146b739544cdc39321, type: 3}
+      propertyPath: m_Size.y
+      value: 1.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2002,9 +2086,21 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 5902698872513668528, guid: f1a197c2b380fa146b739544cdc39321, type: 3}
+      propertyPath: m_TagString
+      value: MarblePlatform
+      objectReference: {fileID: 0}
     - target: {fileID: 5976627618292896211, guid: f1a197c2b380fa146b739544cdc39321, type: 3}
       propertyPath: durability
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6378057620939684888, guid: f1a197c2b380fa146b739544cdc39321, type: 3}
+      propertyPath: m_Size.x
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6378057620939684888, guid: f1a197c2b380fa146b739544cdc39321, type: 3}
+      propertyPath: m_Size.y
+      value: 1.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3645,9 +3741,21 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 5902698872513668528, guid: f1a197c2b380fa146b739544cdc39321, type: 3}
+      propertyPath: m_TagString
+      value: MarblePlatform
+      objectReference: {fileID: 0}
     - target: {fileID: 5976627618292896211, guid: f1a197c2b380fa146b739544cdc39321, type: 3}
       propertyPath: durability
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6378057620939684888, guid: f1a197c2b380fa146b739544cdc39321, type: 3}
+      propertyPath: m_Size.x
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6378057620939684888, guid: f1a197c2b380fa146b739544cdc39321, type: 3}
+      propertyPath: m_Size.y
+      value: 1.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3855,9 +3963,21 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 5902698872513668528, guid: f1a197c2b380fa146b739544cdc39321, type: 3}
+      propertyPath: m_TagString
+      value: MarblePlatform
+      objectReference: {fileID: 0}
     - target: {fileID: 5976627618292896211, guid: f1a197c2b380fa146b739544cdc39321, type: 3}
       propertyPath: durability
-      value: 10
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6378057620939684888, guid: f1a197c2b380fa146b739544cdc39321, type: 3}
+      propertyPath: m_Size.x
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6378057620939684888, guid: f1a197c2b380fa146b739544cdc39321, type: 3}
+      propertyPath: m_Size.y
+      value: 1.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
