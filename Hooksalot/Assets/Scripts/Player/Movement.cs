@@ -4,8 +4,8 @@ public class Movement : MonoBehaviour
 {
     [SerializeField] LayerMask ground;
     [SerializeField] float walkSpeed;
-    [Range(0, 2)] [SerializeField] float inAirSpeedMult; // Will apply if the player is in the air, and is not hooked
-    [Range(0, 2)] [SerializeField] float hookedInAirSpeedMult; // Will apply if the player is in the air, and is hooked
+    [Range(0, 2)][SerializeField] float inAirSpeedMult; // Will apply if the player is in the air, and is not hooked
+    [Range(0, 2)][SerializeField] float hookedInAirSpeedMult; // Will apply if the player is in the air, and is hooked
     [SerializeField] bool useGroundSpeedLimit;
     [SerializeField] float maxSpeed;
     private Rigidbody2D rb;
@@ -42,7 +42,7 @@ public class Movement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Jump(); 
+            Jump();
         }
 
         // Make it possible for the player to walk freely while they are walking around on the ground with the hook launched
@@ -69,7 +69,7 @@ public class Movement : MonoBehaviour
         if (GameManager.debugMode)
         {
             Debug.DrawLine(transform.position, transform.position + Vector3.down * maxDistanceToGround, Color.red, Time.deltaTime);
-            if(hit.collider != null)
+            if (hit.collider != null)
             {
                 Debug.Log($"IsGrounded hit {hit.collider.name} on layer {hit.collider.gameObject.layer}.");
             }
@@ -130,4 +130,6 @@ public class Movement : MonoBehaviour
         }
         rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
     }
+    
+    
 }

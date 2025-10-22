@@ -148,7 +148,7 @@ public class GrapplingHook : MonoBehaviour
         return successfulGrapple;
     }
 
-    private void SwitchHookState()
+    public void SwitchHookState()
     {
         // Switch between launched and retracted states
         timeSinceUnhooked = 0;
