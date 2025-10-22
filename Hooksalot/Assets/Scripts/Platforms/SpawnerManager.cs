@@ -4,7 +4,7 @@ using UnityEngine.UIElements;
 
 public class SpawnerManager : MonoBehaviour
 {
-    [HideInInspector] public List<SpawnZone> spawnZones = new List<SpawnZone>();
+    public List<SpawnZone> spawnZones = new List<SpawnZone>();
     private List<SpawnZone> activeZones = new List<SpawnZone>();
 
     // Platforms will spawn as the player ascends.
@@ -42,7 +42,9 @@ public class SpawnerManager : MonoBehaviour
             for (int i = 0; i < spawnZoneBoundaries.Count; i++)
             {
                 Vector2 position = new Vector2(0, spawnZoneBoundaries[i].x + (spawnZoneBoundaries[i].y - spawnZoneBoundaries[i].x) * 0.5f);
-                Instantiate(spawnZonePrefab, position, Quaternion.identity).transform.localScale = new Vector2(GameManager.halfScreenSize.x * 2, spawnZoneBoundaries[i].y - spawnZoneBoundaries[i].x);
+                SpawnZone newSpawnZone = Instantiate(spawnZonePrefab, position, Quaternion.identity).GetComponent<SpawnZone>();
+                spawnZones.Add(newSpawnZone);
+                newSpawnZone.transform.localScale = new Vector2(GameManager.halfScreenSize.x * 2, spawnZoneBoundaries[i].y - spawnZoneBoundaries[i].x);
             }
         }
     }
@@ -54,7 +56,7 @@ public class SpawnerManager : MonoBehaviour
         // When the player's max achieved y-coordinate equals or exceeds the "spawn next playform at y-coordinate" number, spawn a batch of platforms, and increase that number by X, where X is the spawnInterval.
         if(GameManager.playerMaxY + playerZoneDistance >= spawnNextPlatformAt)
         {
-            Debug.Log("Spawn Platform");
+            Debug.Log("Spawn Platforms");
             SpawnPlatforms();
             spawnNextPlatformAt += spawnInterval;
         }
@@ -86,9 +88,10 @@ public class SpawnerManager : MonoBehaviour
                 i--;
             }
         }
-
+        Debug.Log("UpdateZoneStates Runs");
         for(int i = 0; i < spawnZones.Count; i++) // Activate zones
         {
+            Debug.Log($"Spawnzones @{i}");
             if (spawnZones[i].isActive)
             {
                 continue;
@@ -97,6 +100,7 @@ public class SpawnerManager : MonoBehaviour
             {
                 activeZones.Add(spawnZones[i]);
                 spawnZones[i].isActive = true;
+                Debug.Log("Activated Zone");
             }
         }
     }

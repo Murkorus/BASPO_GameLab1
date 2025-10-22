@@ -240,7 +240,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpawnerManager
   spawnZones: []
-  generateSpawnZones: 0
+  generateSpawnZones: 1
   spawnZonePrefab: {fileID: 62704051324878341, guid: ebfc71e3bb664b842b4d736ec079ad60, type: 3}
   spawnZoneBoundaries:
   - {x: 0, y: 100}
@@ -966,7 +966,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &5672539806692252374
 Rigidbody2D:
   serializedVersion: 5

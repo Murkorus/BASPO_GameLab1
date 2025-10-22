@@ -32,18 +32,22 @@ public class SpawnZone : MonoBehaviour
     [SerializeField] float myYScaleMultiplier;
     [Range(1, 5)] public int maxPlatformsPerY; // How many platforms can at most spawn on the same y-level?
 
-    [HideInInspector] public bool isActive; // Switched off at the start of the game, and on when the player gets close enough, then off again when spawning is finished.
-    [HideInInspector] public bool isExhausted; // Switched off at the start of the game, and on when spawning is finished.
-    [HideInInspector] public Vector2 bottomLeftCorner;
-    [HideInInspector] public Vector2 topRightCorner;
+    [Header("Debugging")]
+    public bool isActive; // Switched off at the start of the game, and on when the player gets close enough, then off again when spawning is finished.
+    public bool isExhausted; // Switched off at the start of the game, and on when spawning is finished.
+    public Vector2 bottomLeftCorner;
+    public Vector2 topRightCorner;
     private Transform lastSpawnedPlatform;
 
     private void Awake() // Done in Awake for SEO purposes. Must add itself to the SpawnerManager list before the SpawnerManager list does anything.
     {
         GetComponent<SpriteRenderer>().enabled = false;
         sm = FindFirstObjectByType<SpawnerManager>();
-        sm.spawnZones.Add(this);
-
+        if (!sm.spawnZones.Contains(this))
+        {
+            sm.spawnZones.Add(this);
+        }
+        
         bottomLeftCorner = transform.position - transform.localScale * 0.5f;
         topRightCorner = transform.position + transform.localScale * 0.5f;
     }
