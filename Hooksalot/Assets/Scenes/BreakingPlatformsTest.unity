@@ -185,7 +185,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5902698872513668528, guid: f1a197c2b380fa146b739544cdc39321, type: 3}
       propertyPath: m_TagString
-      value: MarblePlatform
+      value: StoneBrickPlatform
       objectReference: {fileID: 0}
     - target: {fileID: 5976627618292896211, guid: f1a197c2b380fa146b739544cdc39321, type: 3}
       propertyPath: durability
@@ -527,7 +527,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5902698872513668528, guid: f1a197c2b380fa146b739544cdc39321, type: 3}
       propertyPath: m_TagString
-      value: MarblePlatform
+      value: StoneBrickPlatform
       objectReference: {fileID: 0}
     - target: {fileID: 5976627618292896211, guid: f1a197c2b380fa146b739544cdc39321, type: 3}
       propertyPath: durability
@@ -663,7 +663,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5902698872513668528, guid: f1a197c2b380fa146b739544cdc39321, type: 3}
       propertyPath: m_TagString
-      value: MarblePlatform
+      value: StoneBrickPlatform
       objectReference: {fileID: 0}
     - target: {fileID: 5976627618292896211, guid: f1a197c2b380fa146b739544cdc39321, type: 3}
       propertyPath: durability
@@ -744,7 +744,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5902698872513668528, guid: f1a197c2b380fa146b739544cdc39321, type: 3}
       propertyPath: m_TagString
-      value: MarblePlatform
+      value: StoneBrickPlatform
       objectReference: {fileID: 0}
     - target: {fileID: 5976627618292896211, guid: f1a197c2b380fa146b739544cdc39321, type: 3}
       propertyPath: durability
@@ -998,7 +998,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5902698872513668528, guid: f1a197c2b380fa146b739544cdc39321, type: 3}
       propertyPath: m_TagString
-      value: MarblePlatform
+      value: StoneBrickPlatform
       objectReference: {fileID: 0}
     - target: {fileID: 5976627618292896211, guid: f1a197c2b380fa146b739544cdc39321, type: 3}
       propertyPath: durability
@@ -1352,7 +1352,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5902698872513668528, guid: f1a197c2b380fa146b739544cdc39321, type: 3}
       propertyPath: m_TagString
-      value: MarblePlatform
+      value: StoneBrickPlatform
       objectReference: {fileID: 0}
     - target: {fileID: 5976627618292896211, guid: f1a197c2b380fa146b739544cdc39321, type: 3}
       propertyPath: durability
@@ -2003,7 +2003,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5902698872513668528, guid: f1a197c2b380fa146b739544cdc39321, type: 3}
       propertyPath: m_TagString
-      value: MarblePlatform
+      value: StoneBrickPlatform
       objectReference: {fileID: 0}
     - target: {fileID: 5976627618292896211, guid: f1a197c2b380fa146b739544cdc39321, type: 3}
       propertyPath: durability
@@ -2033,6 +2033,10 @@ PrefabInstance:
     - target: {fileID: 916877558662008231, guid: f1a197c2b380fa146b739544cdc39321, type: 3}
       propertyPath: m_Name
       value: Platform 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 916877558662008231, guid: f1a197c2b380fa146b739544cdc39321, type: 3}
+      propertyPath: m_TagString
+      value: StoneBrickPlatform
       objectReference: {fileID: 0}
     - target: {fileID: 5603394029844384962, guid: f1a197c2b380fa146b739544cdc39321, type: 3}
       propertyPath: m_LocalScale.x
@@ -3743,7 +3747,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5902698872513668528, guid: f1a197c2b380fa146b739544cdc39321, type: 3}
       propertyPath: m_TagString
-      value: MarblePlatform
+      value: StoneBrickPlatform
       objectReference: {fileID: 0}
     - target: {fileID: 5976627618292896211, guid: f1a197c2b380fa146b739544cdc39321, type: 3}
       propertyPath: durability
@@ -3965,7 +3969,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5902698872513668528, guid: f1a197c2b380fa146b739544cdc39321, type: 3}
       propertyPath: m_TagString
-      value: MarblePlatform
+      value: StoneBrickPlatform
       objectReference: {fileID: 0}
     - target: {fileID: 5976627618292896211, guid: f1a197c2b380fa146b739544cdc39321, type: 3}
       propertyPath: durability

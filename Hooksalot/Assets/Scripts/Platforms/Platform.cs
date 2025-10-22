@@ -29,7 +29,7 @@ public class Platform : MonoBehaviour
                 durability = Mathf.Infinity; // Can add special behavior for checkpoint platforms here if needed
                 break;
             default:
-                durability = marblePlatform; // Default durability for all other platforms can be changed here
+                durability = stoneBrickPlatform; // Default durability for all other platforms can be changed here
                 break;
         }
     }
