@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class CalculateScore : MonoBehaviour
 {
+    // This script is outdated
     [SerializeField] GameObject player;
     [SerializeField] TMP_Text scoreText;
 

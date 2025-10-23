@@ -96,8 +96,10 @@ public class SpawnZone : MonoBehaviour
 
         int platformsToSpawn = Random.Range(1, maxPlatformsPerY);
         float nthXSize = transform.localScale.x / platformsToSpawn;
-        Debug.Log($"{transform.localScale.x} / {platformsToSpawn} = {nthXSize}.");
-
+        if (GameManager.debugMode)
+        {
+            Debug.Log($"{gameObject.name}: Chose {platformsToSpawn} platforms. {transform.localScale.x} / {platformsToSpawn} = {nthXSize}.");
+        }
         for(int i = 0; i < platformsToSpawn; i++)
         {
             // First, find out which kind of platform to spawn.
@@ -127,7 +129,7 @@ public class SpawnZone : MonoBehaviour
                                            Random.Range(bottomLeftCorner.y + scale.y * 0.5f, bottomLeftCorner.y + scale.y * 0.5f + (useDefaultValues ? sm.defaultPositionVariance : myPositionVariance)));
             // Then, spawn the platform.
             Transform newPlatform = Instantiate(platformSpawnOptions[chosenIndex].spawnableObject, position, Quaternion.identity).transform;
-            newPlatform.GetComponent<Platform>().UpdateScale(scale);
+            newPlatform.GetComponent<Platform>().platformScale = scale;
             lastSpawnedPlatform = newPlatform;
         }
     }

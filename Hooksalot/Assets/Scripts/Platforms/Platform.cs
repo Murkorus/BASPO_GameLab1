@@ -7,7 +7,8 @@ public class Platform : MonoBehaviour
     // Make different kinds of platforms that can withstand more or less force before they break.
     // Also make a "checkpoint" platform that never breaks.
 
-    private float durability; // The speed threshold at which the platform breaks, Average player speed is around 10-14
+    public bool onlyCollideFromTop;
+    [SerializeField] float durability; // The speed threshold at which the platform breaks, Average player speed is around 10-14
     private float marblePlatform = Mathf.Infinity;
     private float stoneBrickPlatform = 13;
     private float woodPlatform = 10;
@@ -18,8 +19,13 @@ public class Platform : MonoBehaviour
     [SerializeField] SpriteRenderer texture;
     [SerializeField] LineRenderer outline;
 
+    public Vector2 platformScale;
+    private LayerMask excludedCollisionLayers;
+    private float platformTopY;
+
     private void Start()
     {
+        UpdateScale(platformScale);
         switch (gameObject.tag) // Use tags to differentiate platform types, more can be added as needed
         {
             case "MarblePlatform":
@@ -35,8 +41,26 @@ public class Platform : MonoBehaviour
                 durability = Mathf.Infinity; // Can add special behavior for checkpoint platforms here if needed
                 break;
             default:
-                durability = stoneBrickPlatform; // Default durability for all other platforms can be changed here
+                //durability = stoneBrickPlatform; // Default durability for all other platforms can be changed here
                 break;
+        }
+
+        platformTopY = transform.position.y + platformCollider.size.y * 0.5f - 0.05f; // The 0.05 is a buffer.
+        excludedCollisionLayers = platformCollider.excludeLayers;
+    }
+
+    private void Update()
+    {
+        if (onlyCollideFromTop)
+        {
+            if(GameManager.playerRB.transform.position.y - GameManager.playerRB.transform.localScale.y * 0.5f < platformTopY) // If the bottom of the player is above the top of the platform, disable collision with this platform.
+            {
+                platformCollider.excludeLayers = LayerMask.GetMask("Player");
+            }
+            else
+            {
+                platformCollider.excludeLayers = excludedCollisionLayers;
+            }
         }
     }
 
@@ -60,6 +84,7 @@ public class Platform : MonoBehaviour
         triggerCollider.size *= scale;
         platformCollider.size *= scale;
         texture.size *= scale;
+        platformScale = scale;
         outline.SetPositions(new Vector3[]
         {
             new Vector3(transform.position.x + scale.x * 0.5f, transform.position.y + scale.y * 0.5f),

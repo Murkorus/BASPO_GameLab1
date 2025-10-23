@@ -13,6 +13,8 @@ public class SpawnerManager : MonoBehaviour
     // Platforms will despawn when engulfed by corruption.
     // Enemies will despawn when sufficiently far away from the player, or when engulfed by corruption.
 
+    public LayerMask test;
+
     [SerializeField] bool generateSpawnZones; // Set this to true if you want to auto-generate spawnzones based on the list below. They will all be default spawn zones and have the width of the entire screen. Useful for making bulk spawnzones or very big ones.
     [SerializeField] GameObject spawnZonePrefab;
     [SerializeField] List<Vector2> spawnZoneBoundaries = new List<Vector2>(); // Each Vector2 defines a spawnzone with the bottom being the x-coordinate and the top being the y-coordinate.
@@ -56,7 +58,6 @@ public class SpawnerManager : MonoBehaviour
         // When the player's max achieved y-coordinate equals or exceeds the "spawn next playform at y-coordinate" number, spawn a batch of platforms, and increase that number by X, where X is the spawnInterval.
         if(GameManager.playerMaxY + playerZoneDistance >= spawnNextPlatformAt)
         {
-            Debug.Log("Spawn Platforms");
             SpawnPlatforms();
             spawnNextPlatformAt += spawnInterval;
         }
@@ -88,19 +89,16 @@ public class SpawnerManager : MonoBehaviour
                 i--;
             }
         }
-        Debug.Log("UpdateZoneStates Runs");
         for(int i = 0; i < spawnZones.Count; i++) // Activate zones
         {
-            Debug.Log($"Spawnzones @{i}");
             if (spawnZones[i].isActive)
             {
                 continue;
             }
-            if (spawnZones[i].bottomLeftCorner.y <= GameManager.playerRB.transform.position.y + activationDistance)
+            if (spawnZones[i].transform.position.y - spawnZones[i].transform.localScale.y <= GameManager.playerRB.transform.position.y + activationDistance)
             {
                 activeZones.Add(spawnZones[i]);
                 spawnZones[i].isActive = true;
-                Debug.Log("Activated Zone");
             }
         }
     }
