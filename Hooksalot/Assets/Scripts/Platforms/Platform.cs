@@ -7,7 +7,7 @@ public class Platform : MonoBehaviour
     // Make different kinds of platforms that can withstand more or less force before they break.
     // Also make a "checkpoint" platform that never breaks.
 
-    public float durability; // The speed threshold at which the platform breaks, Average player speed is around 10-20
+    private float durability; // The speed threshold at which the platform breaks, Average player speed is around 10-14
     private float marblePlatform = Mathf.Infinity;
     private float stoneBrickPlatform = 13;
     private float woodPlatform = 10;
