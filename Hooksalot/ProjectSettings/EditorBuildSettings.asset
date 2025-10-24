@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu.unity
     guid: 8757013433cb7b5498e72f98c0836aa4
   - enabled: 1
+    path: Assets/Scenes/SpawnZoneTest.unity
+    guid: a95601eab2881e14c97c2a6f1a2c8dc0
+  - enabled: 0
     path: Assets/Scenes/GrapplingTest.unity
     guid: d72f4f702cf40004d8b80d7bea34b157
   m_configObjects:

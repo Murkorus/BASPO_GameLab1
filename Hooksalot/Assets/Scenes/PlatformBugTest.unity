@@ -939,7 +939,7 @@ MonoBehaviour:
   platformCollider: {fileID: 8029808353988299017}
   texture: {fileID: 1767522529545446414}
   outline: {fileID: 8844374414873243572}
-  platformScale: {x: 10, y: 1}
+  platformScale: {x: 10, y: 0.3}
 --- !u!212 &1767522529545446414
 SpriteRenderer:
   m_ObjectHideFlags: 0

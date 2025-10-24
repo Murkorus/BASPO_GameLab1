@@ -13,15 +13,15 @@ public class SpawnerManager : MonoBehaviour
     // Platforms will despawn when engulfed by corruption.
     // Enemies will despawn when sufficiently far away from the player, or when engulfed by corruption.
 
-    public LayerMask test;
-
     [SerializeField] bool generateSpawnZones; // Set this to true if you want to auto-generate spawnzones based on the list below. They will all be default spawn zones and have the width of the entire screen. Useful for making bulk spawnzones or very big ones.
     [SerializeField] GameObject spawnZonePrefab;
     [SerializeField] List<Vector2> spawnZoneBoundaries = new List<Vector2>(); // Each Vector2 defines a spawnzone with the bottom being the x-coordinate and the top being the y-coordinate.
+    [SerializeField] List<float> checkPointSpawns = new List<float>();
+    [SerializeField] GameObject checkPointPrefab;
 
     [Header("Platform Variables")]
     [SerializeField] float spawnInterval; // How far between each platform?
-    
+    //[SerializeField] float spawnCheckpointEveryY; // How far between each checkpoint platform?
     [SerializeField] float activationDistance; // How far below a spawnZone should the player be for it to be activated?
     public float playerZoneDistance; // How far above the player should spawning be disallowed? Note: If set to values lower than around half the size of the camera on the y-axis, spawning will happen on-screen.
     //[SerializeField] int batchSize; // How many platforms should be spawned per 'batch'?
@@ -34,7 +34,6 @@ public class SpawnerManager : MonoBehaviour
     [Header("Enemy Variables")]
     [SerializeField] float timeBetweenWaves;
     [SerializeField] Vector2 waveSizeMinMax;
-
     private float spawnNextPlatformAt;
 
     private void Awake()
@@ -60,6 +59,16 @@ public class SpawnerManager : MonoBehaviour
         {
             SpawnPlatforms();
             spawnNextPlatformAt += spawnInterval;
+        }
+
+        for(int i = 0; i < checkPointSpawns.Count; i++)
+        {
+            if(GameManager.playerMaxY + activationDistance >= checkPointSpawns[i])
+            {
+                Instantiate(checkPointPrefab, Vector3.up * checkPointSpawns[i], Quaternion.identity);
+                checkPointSpawns.RemoveAt(i);
+                i--;
+            }
         }
     }
     private void SpawnPlatforms()

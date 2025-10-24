@@ -126,13 +126,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50fc7d007de16fd4e90328bdd5911cee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Platform
-  onlyCollideFromTop: 0
+  onlyCollideFromTop: 1
   durability: Infinity
   triggerCollider: {fileID: 4508264053279101855}
   platformCollider: {fileID: 8029808353905129192}
   texture: {fileID: 1767522529495948271}
   outline: {fileID: 8844374414788644949}
-  platformScale: {x: 0, y: 0}
+  platformScale: {x: 25, y: 0.3}
 --- !u!61 &4508264053279101855
 BoxCollider2D:
   m_ObjectHideFlags: 0

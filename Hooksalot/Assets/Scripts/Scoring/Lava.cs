@@ -23,7 +23,7 @@ public class Lava : MonoBehaviour
     {
         if(collision.gameObject.layer == 6) // Layer 6 is the player layer
         {
-            // Player dies
+            GameManager.playerIsDead = true;
             return;
         }
 
