@@ -65,7 +65,7 @@ public class Movement : MonoBehaviour
 
     public bool IsGrounded(float maxDistanceToGround)
     {
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, maxDistanceToGround, ground);
+        RaycastHit2D hit = Physics2D.CircleCast(transform.position, transform.localScale.x * 0.5f, Vector2.down, maxDistanceToGround, ground);
         if (GameManager.debugMode)
         {
             Debug.DrawLine(transform.position, transform.position + Vector3.down * maxDistanceToGround, Color.red, Time.deltaTime);

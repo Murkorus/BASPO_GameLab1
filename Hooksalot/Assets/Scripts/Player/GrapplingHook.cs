@@ -27,6 +27,7 @@ public class GrapplingHook : MonoBehaviour
     private float timeSinceUnhooked;
     [HideInInspector] public bool isHookBeingLaunched;
     [HideInInspector] public float hookLaunchDistanceTraveled; // For keeping track of how far the hook has travled between frames when it's being launched.
+    [HideInInspector] public GameObject grappledObject;
     private bool doChainBreak;
     private float chainBreakTimeTracker;
 
@@ -138,10 +139,11 @@ public class GrapplingHook : MonoBehaviour
         {
             tempGrapplePoint = hit.point;
             successfulGrapple = true;
+            grappledObject = hit.collider.gameObject;
         }
-        else if (useMaxDistance)
+        else
         {
-            //tempGrapplePoint = (Vector2)transform.position + grappleDirection.normalized * maxDistance;
+            grappledObject = null;
         }
         grapplePoint = tempGrapplePoint;
         springDistance = Vector2.Distance(transform.position, grapplePoint);
@@ -168,7 +170,11 @@ public class GrapplingHook : MonoBehaviour
         float dotProduct = rb.linearVelocity.x * chainVector.x + rb.linearVelocity.y * chainVector.y;
         if (dotProduct > chainBreakForce)
         {
-            Debug.Log($"Chain broke at velocity {rb.linearVelocity.magnitude}, as it exceeded the limit of {chainBreakForce}.");
+            if (GameManager.debugMode)
+            {
+                Debug.Log($"Chain broke at velocity {rb.linearVelocity.magnitude}, as it exceeded the limit of {chainBreakForce}.");
+            }
+            
             return true;
         }
         else
