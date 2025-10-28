@@ -23,6 +23,7 @@ public class SpawnerManager : MonoBehaviour
     [SerializeField] float spawnInterval; // How far between each platform?
     //[SerializeField] float spawnCheckpointEveryY; // How far between each checkpoint platform?
     [SerializeField] float activationDistance; // How far below a spawnZone should the player be for it to be activated?
+    [SerializeField] float spawningDistance; // How far above the player should platforms be spawning inside a continous spawn zone?
     public float playerZoneDistance; // How far above the player should spawning be disallowed? Note: If set to values lower than around half the size of the camera on the y-axis, spawning will happen on-screen.
     //[SerializeField] int batchSize; // How many platforms should be spawned per 'batch'?
     public float defaultEdgeDistance; // What is the minimum distance between the edges of any two platforms?
@@ -55,7 +56,7 @@ public class SpawnerManager : MonoBehaviour
         //Debug.Log($"SpawnNextPlatformAt: {spawnNextPlatformAt}, playerMaxY: {GameManager.playerMaxY}.");
         // Keep track of the player's max achived y-coordinate.
         // When the player's max achieved y-coordinate equals or exceeds the "spawn next playform at y-coordinate" number, spawn a batch of platforms, and increase that number by X, where X is the spawnInterval.
-        if(GameManager.playerMaxY + playerZoneDistance >= spawnNextPlatformAt)
+        if(GameManager.playerMaxY + playerZoneDistance + spawningDistance >= spawnNextPlatformAt)
         {
             SpawnPlatforms();
             spawnNextPlatformAt += spawnInterval;

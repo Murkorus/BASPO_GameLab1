@@ -21,6 +21,7 @@ public class Platform : MonoBehaviour
     [SerializeField] BoxCollider2D platformCollider;
     [SerializeField] SpriteRenderer texture;
     [SerializeField] LineRenderer outline;
+    [SerializeField] SpriteRenderer minimapMarker;
 
     private LayerMask excludedCollisionLayers;
     private float platformTopY;
@@ -135,6 +136,12 @@ public class Platform : MonoBehaviour
             new Vector3(transform.position.x - scale.x * 0.5f, transform.position.y - scale.y * 0.5f),
             new Vector3(transform.position.x - scale.x * 0.5f, transform.position.y + scale.y * 0.5f)
         });
+
+        minimapMarker.size *= scale;
+        minimapMarker.enabled = true;
+        minimapMarker.transform.position += Vector3.forward * -25;
+        // The marker is a spriterenderer on the prefab. It is disabled and has a position of 0,0,0 by default to preserve the prefab preview in the project view.
+        // The only purpose of enabling it here and setting its position to (0,0,-25) here is to make each platform prefab more easily distinguishable when browsing the files.
     }
 
     private void SwitchDestroyedState()
