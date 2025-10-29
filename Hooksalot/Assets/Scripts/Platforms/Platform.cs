@@ -121,6 +121,10 @@ public class Platform : MonoBehaviour
                 GameManager.hook.SwitchHookState();
             }
         }
+        else
+        {
+            Debug.Log($"Not breaking platform because playerVelo is {Mathf.Abs(playerVelo.y)}, and it should be above {durability}.");
+        }
     }
 
     public void UpdateScale(Vector2 scale)

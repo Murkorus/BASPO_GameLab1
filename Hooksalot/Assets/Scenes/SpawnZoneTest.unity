@@ -774,7 +774,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c76c0bc672f8874abac7183619f81ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
-  debug: 1
+  debug: 0
 --- !u!1 &258685054
 GameObject:
   m_ObjectHideFlags: 0
@@ -3600,7 +3600,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpawnZone
   platformSpawnOptions:
-  - spawnableObject: {fileID: 6264021787171310067, guid: 475b11abbc5f191469d2a901ef69d7a2, type: 3}
+  - spawnableObject: {fileID: 6264021787171310067, guid: 6c79608d2a8a964478de4d9f4a40fab6, type: 3}
     spawnWeight: 1
   powerupSpawnOptions:
   - spawnableObject: {fileID: 7029103513800829938, guid: 8d03367240b3d5c43b2bcde3ea52fd5d, type: 3}
