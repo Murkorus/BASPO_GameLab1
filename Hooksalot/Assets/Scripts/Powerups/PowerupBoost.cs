@@ -7,14 +7,19 @@ public class VerticalLaunchPowerup : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (!other.CompareTag("Player")) return; // Must tag sir hooksalot as player
+        // Use layers instead. Using layers avoids collision in the first place, so there's no need to check if you have collided with the player.
+        //if (!other.CompareTag("Player")) return; // Must tag sir hooksalot as player
 
+        /* We have a reference to the player rigidbody through the GameManager, and since the powerup can only collide with the player, there's no need to do a null-check.
         Rigidbody2D rb = other.attachedRigidbody;
         if (rb == null) return;
+        */
+        Rigidbody2D rb = GameManager.playerRB;
 
         // Grappling hook interaction
-        GrapplingHook hook = other.GetComponent<GrapplingHook>();
-        if (hook != null && hook.hookLaunched)
+        // GrapplingHook hook = other.GetComponent<GrapplingHook>(); // We also have a reference to the grappling hook through GameManager, no need to run this expensive function.
+        GrapplingHook hook = GameManager.hook;
+        if (/*hook != null && */hook.hookLaunched) // Again, no need to do a null-check.
         {
             // Retract the hook to prevent janky physics
             hook.SwitchHookState();
@@ -27,6 +32,6 @@ public class VerticalLaunchPowerup : MonoBehaviour
 
         rb.AddForce(Vector2.up * launchForce, ForceMode2D.Impulse);
 
-        Destroy(gameObject);  
+        Destroy(gameObject);
     }
 }

@@ -31,6 +31,7 @@ public class SpawnerManager : MonoBehaviour
     public float defaultPositionVariance; // What is the minimum and maximum variance in the distance between platforms? Setting this to 0 means every platform will be equally far apart.
     public float defaultXScaleMultiplier;
     public float defaultYScaleMultiplier;
+    [Range(0, 1)] public float defaultPowerupSpawnChance; // The chance that a powerup will spawn on top of any spawned platform.
 
     [Header("Enemy Variables")]
     [SerializeField] float timeBetweenWaves;

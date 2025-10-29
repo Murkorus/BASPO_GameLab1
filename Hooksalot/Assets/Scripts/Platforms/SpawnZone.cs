@@ -19,6 +19,7 @@ public class SpawnZone : MonoBehaviour
     }
 
     public Spawnable[] platformSpawnOptions = new Spawnable[0];
+    public Spawnable[] powerupSpawnOptions = new Spawnable[0];
     public Spawnable[] enemySpawnOptions = new Spawnable[0];
 
     private SpawnerManager sm;
@@ -33,6 +34,7 @@ public class SpawnZone : MonoBehaviour
     [SerializeField] float myPositionVariance;
     [SerializeField] float myXScaleMultiplier;
     [SerializeField] float myYScaleMultiplier;
+    [Range(0, 1)] [SerializeField] float myPowerupSpawnChance;
     [Range(1, 5)] public int maxPlatformsPerY; // How many platforms can at most spawn on the same y-level?
 
     [Header("Debugging")]
@@ -40,7 +42,7 @@ public class SpawnZone : MonoBehaviour
     public bool isExhausted; // Switched off at the start of the game, and on when spawning is finished.
     public Vector2 bottomLeftCorner;
     public Vector2 topRightCorner;
-    private Transform lastSpawnedPlatform;
+    private Platform lastSpawnedPlatform;
 
     private void Awake() // Done in Awake for SEO purposes. Must add itself to the SpawnerManager list before the SpawnerManager list does anything.
     {
@@ -131,15 +133,59 @@ public class SpawnZone : MonoBehaviour
             Vector2 position = new Vector2(Random.Range(bottomLeftCorner.x + nthXSize * i + scale.x * 0.5f, bottomLeftCorner.x + nthXSize * (i + 1) - scale.x * 0.5f),
                                            Random.Range(bottomLeftCorner.y + scale.y * 0.5f, bottomLeftCorner.y + scale.y * 0.5f + (useDefaultValues ? sm.defaultPositionVariance : myPositionVariance)));
             // Then, spawn the platform.
-            Transform newPlatform = Instantiate(platformSpawnOptions[chosenIndex].spawnableObject, position, Quaternion.identity).transform;
-            newPlatform.GetComponent<Platform>().platformScale = scale;
+            Platform newPlatform = Instantiate(platformSpawnOptions[chosenIndex].spawnableObject, position, Quaternion.identity).GetComponent<Platform>();
+            newPlatform.platformScale = scale;
             lastSpawnedPlatform = newPlatform;
+
+            // Spawn a powerup.
+            if(Random.Range(0f, 1f) <= (useDefaultValues ? sm.defaultPowerupSpawnChance : myPowerupSpawnChance))
+            {
+                SpawnPowerup();
+            }
         }
     }
 
     public void SpawnPowerup()
     {
-        UpdateNoSpawnZone();
+        // Take advantage of the fact that platforms are already guaranteed to be somewhat spaced apart.
+        // We can spawn powerups based on the position of the last spawned platform.
+
+        // We could also, instead of spawning the powerup on top of a platform, send a circlecast downwards, and spawn the powerup somewhere in between the bottom of the platform and the place the circlecast hit.
+        // This would make the powerups spawn mid-air, but might not always work if platforms are too densely packed.
+
+        // First, decide between if the powerup should be spawned above or below the platform.
+        if(Random.Range(0f, 1f) <= 0f)
+        {
+            // Spawn above
+            Vector2 spawnpoint = (Vector2)lastSpawnedPlatform.transform.position + (lastSpawnedPlatform.platformScale.y * 0.5f + 1) * Vector2.up;
+            Instantiate(powerupSpawnOptions[0].spawnableObject, spawnpoint, Quaternion.identity);
+        }
+        else
+        {
+            // Spawn below
+            // Only collide with default and grappleable layers.
+            // We take the binary values of the masks we want to collide with, and add them together.
+            LayerMask onlyPlatformMask = LayerMask.GetMask("Default") + LayerMask.GetMask("Grappleable");
+            Vector2 circleCastOrigin = (Vector2)lastSpawnedPlatform.transform.position - (lastSpawnedPlatform.platformScale.y * 0.5f + powerupSpawnOptions[0].spawnableObject.transform.localScale.y * 0.5f + 1) * Vector2.up + Random.Range(-lastSpawnedPlatform.transform.localScale.x, lastSpawnedPlatform.transform.localScale.x) * Vector2.right;
+            RaycastHit2D hit = Physics2D.CircleCast(circleCastOrigin, 1, -Vector2.up, Mathf.Infinity, onlyPlatformMask);
+            if (GameManager.debugMode)
+            {
+                Debug.DrawLine(circleCastOrigin, hit.point, Color.yellow, 60);
+            }
+            // Since the circlecast can hit the default layer, and the floor is set to the default layer, hit should in theory always be true.
+            if (hit)
+            {
+                // Find the vector between the hit point and the start point.
+                Vector2 belowPlatformVector = new Vector2(circleCastOrigin.x, hit.point.y) - circleCastOrigin;
+
+                // Pick a random spot on that vector.
+                Vector2 spawnPoint = circleCastOrigin + belowPlatformVector * Random.Range(0.2f, 0.8f);
+
+                // Spawn the powerup
+                Instantiate(powerupSpawnOptions[0].spawnableObject, spawnPoint, Quaternion.identity);
+            }
+
+        }
     }
 
     public void SpawnEnemy()
