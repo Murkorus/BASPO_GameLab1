@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/SpawnZoneTest.unity
     guid: a95601eab2881e14c97c2a6f1a2c8dc0
   - enabled: 0
-    path: Assets/Scenes/GrapplingTest.unity
+    path: Assets/Scenes/Archived/GrapplingTest.unity
     guid: d72f4f702cf40004d8b80d7bea34b157
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
