@@ -45,6 +45,7 @@ public class Movement : MonoBehaviour
             Jump();
         }
 
+        
         // Make it possible for the player to walk freely while they are walking around on the ground with the hook launched
         if (hookScript.hookLaunched && isWalking && !hookScript.isReeling && isGrounded)
         {
@@ -56,6 +57,7 @@ public class Movement : MonoBehaviour
         {
             springJoint.dampingRatio = originalDampingRatio;
         }
+       
     }
 
     private void FixedUpdate()
@@ -80,21 +82,23 @@ public class Movement : MonoBehaviour
     public bool IsGrounded()
     {
         // Setting the distance to ground to be the radius of the player collider, and then a little extra. This only works because the player is round.
-        return IsGrounded(playerCollider.radius * 1.1f);
+        return IsGrounded(0.1f);
     }
 
     private void ApplyMovement()
     {
-        rb.AddForce(playerInput * walkSpeed * Time.fixedDeltaTime); // We apply movement as physics, to make it more consistent with the grappling hook
-        if (useGroundSpeedLimit && isGrounded)
-        {
-            rb.linearVelocity = Vector2.ClampMagnitude(rb.linearVelocity, maxSpeed);
-        }
-
         if (GameManager.debugMode)
         {
             Debug.DrawLine(transform.position, (Vector2)transform.position + rb.linearVelocity, Color.yellow, Time.fixedDeltaTime);
         }
+
+        if (useGroundSpeedLimit && isGrounded && Mathf.Abs(rb.linearVelocityX) >= maxSpeed)
+        {
+            // Return before force can be applied if the player is already at max speed.
+            return;
+        }
+
+        rb.AddForce(playerInput * walkSpeed * Time.fixedDeltaTime); // We apply movement as physics, to make it more consistent with the grappling hook
     }
 
     private void GetMovementInput()

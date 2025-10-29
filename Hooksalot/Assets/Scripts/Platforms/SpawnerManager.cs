@@ -18,6 +18,9 @@ public class SpawnerManager : MonoBehaviour
     [SerializeField] List<Vector2> spawnZoneBoundaries = new List<Vector2>(); // Each Vector2 defines a spawnzone with the bottom being the x-coordinate and the top being the y-coordinate.
     [SerializeField] List<float> checkPointSpawns = new List<float>();
     [SerializeField] GameObject checkPointPrefab;
+    public Transform platformParent;
+    public Transform powerupParent;
+    public Transform enemyParent;
 
     [Header("Platform Variables")]
     [SerializeField] float spawnInterval; // How far between each platform?
@@ -32,6 +35,7 @@ public class SpawnerManager : MonoBehaviour
     public float defaultXScaleMultiplier;
     public float defaultYScaleMultiplier;
     [Range(0, 1)] public float defaultPowerupSpawnChance; // The chance that a powerup will spawn on top of any spawned platform.
+    [Range(0, 1)] public float powerupSpawningBehaviour; // The chance that when a powerup spawns, it will spawn ontop of a platform rather than below it. This does not affect the chance to spawn a powerup, merely how and where they spawn.
 
     [Header("Enemy Variables")]
     [SerializeField] float timeBetweenWaves;

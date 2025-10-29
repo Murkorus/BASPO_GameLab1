@@ -133,7 +133,7 @@ public class SpawnZone : MonoBehaviour
             Vector2 position = new Vector2(Random.Range(bottomLeftCorner.x + nthXSize * i + scale.x * 0.5f, bottomLeftCorner.x + nthXSize * (i + 1) - scale.x * 0.5f),
                                            Random.Range(bottomLeftCorner.y + scale.y * 0.5f, bottomLeftCorner.y + scale.y * 0.5f + (useDefaultValues ? sm.defaultPositionVariance : myPositionVariance)));
             // Then, spawn the platform.
-            Platform newPlatform = Instantiate(platformSpawnOptions[chosenIndex].spawnableObject, position, Quaternion.identity).GetComponent<Platform>();
+            Platform newPlatform = Instantiate(platformSpawnOptions[chosenIndex].spawnableObject, position, Quaternion.identity, sm.platformParent).GetComponent<Platform>();
             newPlatform.platformScale = scale;
             lastSpawnedPlatform = newPlatform;
 
@@ -154,11 +154,11 @@ public class SpawnZone : MonoBehaviour
         // This would make the powerups spawn mid-air, but might not always work if platforms are too densely packed.
 
         // First, decide between if the powerup should be spawned above or below the platform.
-        if(Random.Range(0f, 1f) <= 0f)
+        if(Random.Range(0f, 1f) <= sm.powerupSpawningBehaviour)
         {
             // Spawn above
             Vector2 spawnpoint = (Vector2)lastSpawnedPlatform.transform.position + (lastSpawnedPlatform.platformScale.y * 0.5f + 1) * Vector2.up;
-            Instantiate(powerupSpawnOptions[0].spawnableObject, spawnpoint, Quaternion.identity);
+            Instantiate(powerupSpawnOptions[0].spawnableObject, spawnpoint, Quaternion.identity, sm.powerupParent);
         }
         else
         {
@@ -182,7 +182,7 @@ public class SpawnZone : MonoBehaviour
                 Vector2 spawnPoint = circleCastOrigin + belowPlatformVector * Random.Range(0.2f, 0.8f);
 
                 // Spawn the powerup
-                Instantiate(powerupSpawnOptions[0].spawnableObject, spawnPoint, Quaternion.identity);
+                Instantiate(powerupSpawnOptions[0].spawnableObject, spawnPoint, Quaternion.identity, sm.powerupParent);
             }
 
         }
