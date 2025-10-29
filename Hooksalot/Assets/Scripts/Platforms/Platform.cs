@@ -151,5 +151,6 @@ public class Platform : MonoBehaviour
         outline.enabled = !outline.enabled;
         triggerCollider.enabled = !triggerCollider.enabled;
         platformCollider.enabled = !platformCollider.enabled;
+        minimapMarker.enabled = !minimapMarker.enabled;
     }
 }
