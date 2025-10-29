@@ -222,8 +222,8 @@ MonoBehaviour:
   onlyCollideFromTop: 1
   respawnTime: 10
   slowDownMultiplier: 1
-  doDurabilityBasedSlowdown: 1
-  slowDownLimit: 0.2
+  doDurabilityBasedSlowdown: 0
+  slowDownLimit: 0
   triggerCollider: {fileID: 4508264053279101855}
   platformCollider: {fileID: 8029808353905129192}
   texture: {fileID: 1767522529495948271}
