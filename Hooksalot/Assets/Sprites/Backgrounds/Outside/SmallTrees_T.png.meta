@@ -1,0 +1,1183 @@
+fileFormatVersion: 2
+guid: 654adf723f2acb746b6c52320dc7060f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1754653790007350736
+    second: SmallTrees_T_0
+  - first:
+      213: 7591710545011262102
+    second: SmallTrees_T_1
+  - first:
+      213: -2512350106332811692
+    second: SmallTrees_T_2
+  - first:
+      213: 5664208701749425012
+    second: SmallTrees_T_3
+  - first:
+      213: -434617620151244598
+    second: SmallTrees_T_4
+  - first:
+      213: -7369809602355690153
+    second: SmallTrees_T_5
+  - first:
+      213: 7487020006130336916
+    second: SmallTrees_T_6
+  - first:
+      213: -159028444987495425
+    second: SmallTrees_T_7
+  - first:
+      213: 1361318651760596847
+    second: SmallTrees_T_8
+  - first:
+      213: -2130691111638791610
+    second: SmallTrees_T_9
+  - first:
+      213: -2214700148687334066
+    second: SmallTrees_T_10
+  - first:
+      213: -5898627758548511450
+    second: SmallTrees_T_11
+  - first:
+      213: 4727943765020894762
+    second: SmallTrees_T_12
+  - first:
+      213: -8401904941339021895
+    second: SmallTrees_T_13
+  - first:
+      213: 4622830435008376440
+    second: SmallTrees_T_14
+  - first:
+      213: -3457237948003846335
+    second: SmallTrees_T_15
+  - first:
+      213: 2899477435336028361
+    second: SmallTrees_T_16
+  - first:
+      213: 7519885194449475106
+    second: SmallTrees_T_17
+  - first:
+      213: -4006537139153536182
+    second: SmallTrees_T_18
+  - first:
+      213: 8770976107719036563
+    second: SmallTrees_T_19
+  - first:
+      213: 1967062985266188288
+    second: SmallTrees_T_20
+  - first:
+      213: -7440791104033267431
+    second: SmallTrees_T_21
+  - first:
+      213: 1995773407653222124
+    second: SmallTrees_T_22
+  - first:
+      213: 4283843548365726272
+    second: SmallTrees_T_23
+  - first:
+      213: -1305103050472485814
+    second: SmallTrees_T_24
+  - first:
+      213: -4368294454226142639
+    second: SmallTrees_T_25
+  - first:
+      213: -7059732588160759326
+    second: SmallTrees_T_26
+  - first:
+      213: 70073554058632195
+    second: SmallTrees_T_27
+  - first:
+      213: -481935769215372479
+    second: SmallTrees_T_28
+  - first:
+      213: 3834408122554131972
+    second: SmallTrees_T_29
+  - first:
+      213: 9046368135637964212
+    second: SmallTrees_T_30
+  - first:
+      213: 7469801290889482534
+    second: SmallTrees_T_31
+  - first:
+      213: -8135044105044890975
+    second: SmallTrees_T_32
+  - first:
+      213: -4370603490996667095
+    second: SmallTrees_T_33
+  - first:
+      213: -2352502290821598109
+    second: SmallTrees_T_34
+  - first:
+      213: -1920552785112213702
+    second: SmallTrees_T_35
+  - first:
+      213: 7225462794904827169
+    second: SmallTrees_T_36
+  - first:
+      213: -1301105650036796593
+    second: SmallTrees_T_37
+  - first:
+      213: 4862390811973853309
+    second: SmallTrees_T_38
+  - first:
+      213: -4092175225532533699
+    second: SmallTrees_T_39
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SmallTrees_T_0
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 896
+        width: 85
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d55e215358c95810800000000000000
+      internalID: 1754653790007350736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTrees_T_1
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 885
+        width: 123
+        height: 274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 692cbf0a48c2b5960800000000000000
+      internalID: 7591710545011262102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTrees_T_2
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 845
+        width: 138
+        height: 276
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45e2e98a3e6522dd0800000000000000
+      internalID: -2512350106332811692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTrees_T_3
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 857
+        width: 85
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4737371ddcf4b9e40800000000000000
+      internalID: 5664208701749425012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTrees_T_4
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 699
+        width: 113
+        height: 315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac862c1c39de7f9f0800000000000000
+      internalID: -434617620151244598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTrees_T_5
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 678
+        width: 116
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 755835da63d29b990800000000000000
+      internalID: -7369809602355690153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTrees_T_6
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 791
+        width: 85
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49444a3170d37e760800000000000000
+      internalID: 7487020006130336916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTrees_T_7
+      rect:
+        serializedVersion: 2
+        x: 1824
+        y: 822
+        width: 85
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffb665bc8740bcdf0800000000000000
+      internalID: -159028444987495425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTrees_T_8
+      rect:
+        serializedVersion: 2
+        x: 2120
+        y: 846
+        width: 85
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f67dd48e91064e210800000000000000
+      internalID: 1361318651760596847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTrees_T_9
+      rect:
+        serializedVersion: 2
+        x: 2254
+        y: 817
+        width: 85
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64a00bc09b34e62e0800000000000000
+      internalID: -2130691111638791610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTrees_T_10
+      rect:
+        serializedVersion: 2
+        x: 2462
+        y: 819
+        width: 85
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e459c71e2fdc341e0800000000000000
+      internalID: -2214700148687334066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTrees_T_11
+      rect:
+        serializedVersion: 2
+        x: 2605
+        y: 796
+        width: 85
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 625157d4e4dd32ea0800000000000000
+      internalID: -5898627758548511450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTrees_T_12
+      rect:
+        serializedVersion: 2
+        x: 2944
+        y: 788
+        width: 119
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a26e718fdc70d9140800000000000000
+      internalID: 4727943765020894762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTrees_T_13
+      rect:
+        serializedVersion: 2
+        x: 3095
+        y: 785
+        width: 85
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bd63e698ff666b80800000000000000
+      internalID: -8401904941339021895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTrees_T_14
+      rect:
+        serializedVersion: 2
+        x: 3247
+        y: 905
+        width: 85
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87ee98fa9c7972040800000000000000
+      internalID: 4622830435008376440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTrees_T_15
+      rect:
+        serializedVersion: 2
+        x: 3346
+        y: 790
+        width: 85
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 147fa3d476c6500d0800000000000000
+      internalID: -3457237948003846335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTrees_T_16
+      rect:
+        serializedVersion: 2
+        x: 3374
+        y: 947
+        width: 85
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c0f6778d530d3820800000000000000
+      internalID: 2899477435336028361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTrees_T_17
+      rect:
+        serializedVersion: 2
+        x: 3487
+        y: 923
+        width: 85
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22651e60ebffb5860800000000000000
+      internalID: 7519885194449475106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTrees_T_18
+      rect:
+        serializedVersion: 2
+        x: 3643
+        y: 786
+        width: 101
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4bf75113bbe568c0800000000000000
+      internalID: -4006537139153536182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTrees_T_19
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 643
+        width: 155
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39e0802ac44c8b970800000000000000
+      internalID: 8770976107719036563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTrees_T_20
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 657
+        width: 140
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0005c97fc596c4b10800000000000000
+      internalID: 1967062985266188288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTrees_T_21
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 751
+        width: 85
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 911e534f9effcb890800000000000000
+      internalID: -7440791104033267431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTrees_T_22
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 685
+        width: 85
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce65757175962bb10800000000000000
+      internalID: 1995773407653222124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTrees_T_23
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 750
+        width: 85
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04220bda205437b30800000000000000
+      internalID: 4283843548365726272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTrees_T_24
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 651
+        width: 85
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4c0f49b0b753ede0800000000000000
+      internalID: -1305103050472485814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTrees_T_25
+      rect:
+        serializedVersion: 2
+        x: 1224
+        y: 695
+        width: 85
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15aba8d8653b063c0800000000000000
+      internalID: -4368294454226142639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTrees_T_26
+      rect:
+        serializedVersion: 2
+        x: 1441
+        y: 699
+        width: 85
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e9cd697d9ac60e90800000000000000
+      internalID: -7059732588160759326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTrees_T_27
+      rect:
+        serializedVersion: 2
+        x: 1529
+        y: 593
+        width: 85
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30c50d1b683f8f000800000000000000
+      internalID: 70073554058632195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTrees_T_28
+      rect:
+        serializedVersion: 2
+        x: 1622
+        y: 758
+        width: 85
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 143fc57a8f1df49f0800000000000000
+      internalID: -481935769215372479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTrees_T_29
+      rect:
+        serializedVersion: 2
+        x: 1734
+        y: 632
+        width: 85
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40626b43fdd863530800000000000000
+      internalID: 3834408122554131972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTrees_T_30
+      rect:
+        serializedVersion: 2
+        x: 1878
+        y: 708
+        width: 85
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b51d10c3e72b8d70800000000000000
+      internalID: 9046368135637964212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTrees_T_31
+      rect:
+        serializedVersion: 2
+        x: 1985
+        y: 645
+        width: 148
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 621d83682b01aa760800000000000000
+      internalID: 7469801290889482534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTrees_T_32
+      rect:
+        serializedVersion: 2
+        x: 2210
+        y: 619
+        width: 85
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1aae9aedc748a1f80800000000000000
+      internalID: -8135044105044890975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTrees_T_33
+      rect:
+        serializedVersion: 2
+        x: 2411
+        y: 649
+        width: 85
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92dbf09084f7853c0800000000000000
+      internalID: -4370603490996667095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTrees_T_34
+      rect:
+        serializedVersion: 2
+        x: 2538
+        y: 683
+        width: 85
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 364394e61ab3a5fd0800000000000000
+      internalID: -2352502290821598109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTrees_T_35
+      rect:
+        serializedVersion: 2
+        x: 2771
+        y: 743
+        width: 85
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a37dffeda63d855e0800000000000000
+      internalID: -1920552785112213702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTrees_T_36
+      rect:
+        serializedVersion: 2
+        x: 3523
+        y: 749
+        width: 85
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1257a1c3120064460800000000000000
+      internalID: 7225462794904827169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTrees_T_37
+      rect:
+        serializedVersion: 2
+        x: 3753
+        y: 679
+        width: 85
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f439d4a0e4b81fde0800000000000000
+      internalID: -1301105650036796593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTrees_T_38
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 536
+        width: 85
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7023d27eaeaa7340800000000000000
+      internalID: 4862390811973853309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTrees_T_39
+      rect:
+        serializedVersion: 2
+        x: 1378
+        y: 570
+        width: 85
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d34ba7b405ca537c0800000000000000
+      internalID: -4092175225532533699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SmallTrees_T_0: 1754653790007350736
+      SmallTrees_T_1: 7591710545011262102
+      SmallTrees_T_10: -2214700148687334066
+      SmallTrees_T_11: -5898627758548511450
+      SmallTrees_T_12: 4727943765020894762
+      SmallTrees_T_13: -8401904941339021895
+      SmallTrees_T_14: 4622830435008376440
+      SmallTrees_T_15: -3457237948003846335
+      SmallTrees_T_16: 2899477435336028361
+      SmallTrees_T_17: 7519885194449475106
+      SmallTrees_T_18: -4006537139153536182
+      SmallTrees_T_19: 8770976107719036563
+      SmallTrees_T_2: -2512350106332811692
+      SmallTrees_T_20: 1967062985266188288
+      SmallTrees_T_21: -7440791104033267431
+      SmallTrees_T_22: 1995773407653222124
+      SmallTrees_T_23: 4283843548365726272
+      SmallTrees_T_24: -1305103050472485814
+      SmallTrees_T_25: -4368294454226142639
+      SmallTrees_T_26: -7059732588160759326
+      SmallTrees_T_27: 70073554058632195
+      SmallTrees_T_28: -481935769215372479
+      SmallTrees_T_29: 3834408122554131972
+      SmallTrees_T_3: 5664208701749425012
+      SmallTrees_T_30: 9046368135637964212
+      SmallTrees_T_31: 7469801290889482534
+      SmallTrees_T_32: -8135044105044890975
+      SmallTrees_T_33: -4370603490996667095
+      SmallTrees_T_34: -2352502290821598109
+      SmallTrees_T_35: -1920552785112213702
+      SmallTrees_T_36: 7225462794904827169
+      SmallTrees_T_37: -1301105650036796593
+      SmallTrees_T_38: 4862390811973853309
+      SmallTrees_T_39: -4092175225532533699
+      SmallTrees_T_4: -434617620151244598
+      SmallTrees_T_5: -7369809602355690153
+      SmallTrees_T_6: 7487020006130336916
+      SmallTrees_T_7: -159028444987495425
+      SmallTrees_T_8: 1361318651760596847
+      SmallTrees_T_9: -2130691111638791610
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
