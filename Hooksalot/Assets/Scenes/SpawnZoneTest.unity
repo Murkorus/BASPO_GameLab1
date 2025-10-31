@@ -350,7 +350,7 @@ GameObject:
   - component: {fileID: 45190484}
   - component: {fileID: 45190483}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Minimap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -634,7 +634,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1630988613}
         m_TargetAssemblyTypeName: UIButtons, Assembly-CSharp
         m_MethodName: LoadMainMenu
         m_Mode: 1
@@ -2505,7 +2505,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1630988613}
         m_TargetAssemblyTypeName: UIButtons, Assembly-CSharp
         m_MethodName: ReloadCurrentScene
         m_Mode: 1
@@ -2819,9 +2819,12 @@ MonoBehaviour:
   minSpeed: 0.25
   maxSpeed: 2
   distanceBasedSpeedScale: 10
-  speed: 0
-  startDelay: 5
+  speed: 2
+  startDelay: 8
   destructionBuffer: 0
+  deathScreen: {fileID: 404743167}
+  scoreText: {fileID: 687123714}
+  highscoreText: {fileID: 26350648}
   platformsToDestroy: []
   currentSpeed: 0
 --- !u!212 &1398017882
@@ -3027,6 +3030,7 @@ GameObject:
   - component: {fileID: 1630988611}
   - component: {fileID: 1630988610}
   - component: {fileID: 1630988609}
+  - component: {fileID: 1630988613}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -3109,8 +3113,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 404743168}
   - {fileID: 45190482}
+  - {fileID: 404743168}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -3118,6 +3122,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1630988613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1630988608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b37062d4eef07034a8b9166d8f50015b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIButtons
 --- !u!1 &1934819996
 GameObject:
   m_ObjectHideFlags: 0
