@@ -25,6 +25,7 @@ public class GameManager : MonoBehaviour
         // We also know y, as orthographicSize * 2
         // Thus, x = 9 / 16 * orthographicSize * 2
         halfScreenSize.x = Camera.main.aspect * halfScreenSize.y;
+        Debug.Log($"Screen dimensions are: <color=green>{halfScreenSize.x * 2}x{halfScreenSize.y * 2}</color>.");
     }
 
     private void Update()

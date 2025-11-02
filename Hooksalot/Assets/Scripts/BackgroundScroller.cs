@@ -9,6 +9,7 @@ public class BackgroundScroller : MonoBehaviour
 
     [SerializeField] SpriteRenderer[] backgroundSprites = new SpriteRenderer[0];
     [SerializeField] float[] parallaxStrength = new float[0]; // 0 means the picture stays in place, 1 means the picture moves with the camera.
+    [SerializeField] bool[] onlyShowOnce = new bool[0];
     private float[] centerPositions;
     private float camHeight;
 
@@ -31,6 +32,11 @@ public class BackgroundScroller : MonoBehaviour
             float cameraDistanceTraveled = Camera.main.transform.position.y * parallaxStrength[i];
 
             spriteTransform.position = new Vector2(spriteTransform.position.x, centerPositions[i] + cameraDistanceTraveled);
+
+            if (onlyShowOnce[i])
+            {
+                continue;
+            }
 
             if(cameraRelativePosition > centerPositions[i] + camHeight)
             {

@@ -139,7 +139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Platform
   durability: Infinity
-  platformScale: {x: 25, y: 0.3}
+  platformScale: {x: 20, y: 0.5}
   onlyCollideFromTop: 1
   respawnTime: 10
   slowDownMultiplier: 0.2
