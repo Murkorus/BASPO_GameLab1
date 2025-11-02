@@ -26,9 +26,9 @@ public class SpawnZone : MonoBehaviour
 
     [Header("Variables")]
     [SerializeField] bool useDefaultValues; // If true, uses the default values defined in the manager, rather than its own individual values.
-    [SerializeField] bool canSpawnPlatforms = true; // Setting this to true here because it's the easiest way of making true a default value.
-    [SerializeField] bool canSpawnPowerups;
-    [SerializeField] bool canSpawnEnemies;
+    //[SerializeField] bool canSpawnPlatforms = true; // Setting this to true here because it's the easiest way of making true a default value.
+    //[SerializeField] bool canSpawnPowerups;
+    //[SerializeField] bool canSpawnEnemies;
     [SerializeField] float myEdgeDistance; // See SpawnerManager script for description of these values.
     [SerializeField] float myScaleVariance;
     [SerializeField] float myPositionVariance;
