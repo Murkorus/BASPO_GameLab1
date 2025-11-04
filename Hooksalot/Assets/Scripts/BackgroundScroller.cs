@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class BackgroundScroller : MonoBehaviour
@@ -16,6 +17,7 @@ public class BackgroundScroller : MonoBehaviour
     private void Start()
     {
         centerPositions = new float[backgroundSprites.Length];
+        Array.Fill(centerPositions, transform.position.y);
         for (int i = 0; i < centerPositions.Length; i++)
         {
             centerPositions[i] = backgroundSprites[i].transform.position.y;

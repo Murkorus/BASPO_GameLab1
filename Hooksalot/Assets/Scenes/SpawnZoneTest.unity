@@ -3081,6 +3081,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FollowPlayer
   cameraSpeed: 1
+  minSpeed: 0
   cameraHeight: 30
 --- !u!1 &936867772
 GameObject:
@@ -5322,7 +5323,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -9
-  m_Sprite: {fileID: 21300000, guid: 8064402846c9367418e24cf42030a234, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 709985b29986d4a47a9d420288ebc971, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5580,7 +5581,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FollowPlayer
   cameraSpeed: 1
-  cameraHeight: 3
+  minSpeed: 1
+  cameraHeight: 7
 --- !u!50 &163757237665768759
 Rigidbody2D:
   serializedVersion: 5
@@ -5623,9 +5625,15 @@ MonoBehaviour:
   platformSpawnOptions:
   - spawnableObject: {fileID: 6264021787171310067, guid: 6c79608d2a8a964478de4d9f4a40fab6, type: 3}
     spawnWeight: 1
-  - spawnableObject: {fileID: 6264021787171310067, guid: 475b11abbc5f191469d2a901ef69d7a2, type: 3}
+  - spawnableObject: {fileID: 6264021787171310067, guid: f243bf41beeced444b1e26eb864b4b8e, type: 3}
     spawnWeight: 1
   - spawnableObject: {fileID: 6264021787171310067, guid: 67c2d6299c074a04fbd550a4e327406b, type: 3}
+    spawnWeight: 1
+  - spawnableObject: {fileID: 6264021787171310067, guid: 475b11abbc5f191469d2a901ef69d7a2, type: 3}
+    spawnWeight: 1
+  - spawnableObject: {fileID: 6264021787171310067, guid: 2bcea7b870f898a4b8e370d4dbc5831b, type: 3}
+    spawnWeight: 1
+  - spawnableObject: {fileID: 6264021787171310067, guid: c0fb07551ed6ff244925dc6386446732, type: 3}
     spawnWeight: 1
   powerupSpawnOptions:
   - spawnableObject: {fileID: 7029103513800829938, guid: 8d03367240b3d5c43b2bcde3ea52fd5d, type: 3}
