@@ -17,16 +17,17 @@ public class SpawnerManager : MonoBehaviour
     [SerializeField] GameObject spawnZonePrefab;
     [SerializeField] List<Vector2> spawnZoneBoundaries = new List<Vector2>(); // Each Vector2 defines a spawnzone with the bottom being the x-coordinate and the top being the y-coordinate.
     [SerializeField] List<float> checkPointSpawns = new List<float>();
+    [SerializeField] float checkPointInterval;
     [SerializeField] GameObject checkPointPrefab;
     public Transform platformParent;
     public Transform powerupParent;
     public Transform enemyParent;
 
     [Header("Platform Variables")]
-    [SerializeField] float spawnInterval; // How far between each platform?
+    public float spawnInterval; // How far between each platform?
     //[SerializeField] float spawnCheckpointEveryY; // How far between each checkpoint platform?
     [SerializeField] float activationDistance; // How far below a spawnZone should the player be for it to be activated?
-    [SerializeField] float spawningDistance; // How far above the player should platforms be spawning inside a continous spawn zone?
+    public float spawningDistance; // How far above the player should platforms be spawning inside a continous spawn zone?
     public float playerZoneDistance; // How far above the player should spawning be disallowed? Note: If set to values lower than around half the size of the camera on the y-axis, spawning will happen on-screen.
     //[SerializeField] int batchSize; // How many platforms should be spawned per 'batch'?
     public float defaultEdgeDistance; // What is the minimum distance between the edges of any two platforms?
@@ -40,6 +41,8 @@ public class SpawnerManager : MonoBehaviour
     [Header("Enemy Variables")]
     [SerializeField] float timeBetweenWaves;
     [SerializeField] Vector2 waveSizeMinMax;
+
+    private float spawnNextCheckpointAt;
     private float spawnNextPlatformAt;
 
     private void Awake()
@@ -54,6 +57,11 @@ public class SpawnerManager : MonoBehaviour
                 newSpawnZone.transform.localScale = new Vector2(GameManager.halfScreenSize.x * 2, spawnZoneBoundaries[i].y - spawnZoneBoundaries[i].x);
             }
         }
+
+        for (int i = 0; i < checkPointSpawns.Count; i++)
+        {
+            Instantiate(checkPointPrefab, Vector3.up * checkPointSpawns[i], Quaternion.identity);
+        }
     }
 
     private void Update()
@@ -67,14 +75,10 @@ public class SpawnerManager : MonoBehaviour
             spawnNextPlatformAt += spawnInterval;
         }
 
-        for(int i = 0; i < checkPointSpawns.Count; i++)
+        if(GameManager.playerMaxY + playerZoneDistance + spawningDistance >= spawnNextCheckpointAt)
         {
-            if(GameManager.playerMaxY + activationDistance >= checkPointSpawns[i])
-            {
-                Instantiate(checkPointPrefab, Vector3.up * checkPointSpawns[i], Quaternion.identity);
-                checkPointSpawns.RemoveAt(i);
-                i--;
-            }
+            Instantiate(checkPointPrefab, Vector3.up * spawnNextCheckpointAt, Quaternion.identity);
+            spawnNextCheckpointAt += checkPointInterval;
         }
     }
     private void SpawnPlatforms()

@@ -25,6 +25,7 @@ public class SpawnZone : MonoBehaviour
     private SpawnerManager sm;
 
     [Header("Variables")]
+    [SerializeField] bool isInfinite;
     [SerializeField] bool useDefaultValues; // If true, uses the default values defined in the manager, rather than its own individual values.
     //[SerializeField] bool canSpawnPlatforms = true; // Setting this to true here because it's the easiest way of making true a default value.
     //[SerializeField] bool canSpawnPowerups;
@@ -43,6 +44,7 @@ public class SpawnZone : MonoBehaviour
     public Vector2 bottomLeftCorner;
     public Vector2 topRightCorner;
     private Platform lastSpawnedPlatform;
+    private float startingYPos;
 
     private void Awake() // Done in Awake for SEO purposes. Must add itself to the SpawnerManager list before the SpawnerManager list does anything.
     {
@@ -55,14 +57,28 @@ public class SpawnZone : MonoBehaviour
         
         bottomLeftCorner = transform.position - transform.localScale * 0.5f;
         topRightCorner = transform.position + transform.localScale * 0.5f;
+
+        startingYPos = bottomLeftCorner.y;
     }
 
     private void UpdateNoSpawnZone()
     {
+        if (isInfinite)
+        {
+            // Update size of the zone so it always stays well ahead of the player.
+            float playerLoadingPosition = bottomLeftCorner.y + GameManager.playerRB.transform.position.y + (sm.spawningDistance + sm.playerZoneDistance + sm.spawnInterval);
+            if (topRightCorner.y < playerLoadingPosition)
+            {
+                transform.position = Vector3.up * (startingYPos + playerLoadingPosition * 0.5f);
+                transform.localScale = new Vector3(transform.localScale.x, playerLoadingPosition, 1);
+            }
+        }
+
         // This is called at the beginning of every platform spawn function call.
 
         // Just in case the scale of the spawn zone itself has changed, first update both corners.
         // This makes it possible to move the zone and change its scale while the game is running.
+        // (Required for the infinite generation to work)
         bottomLeftCorner = transform.position - transform.localScale * 0.5f;
         topRightCorner = transform.position + transform.localScale * 0.5f;
 
