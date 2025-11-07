@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class SuicideEnemy : MonoBehaviour
 {
-    public float Explosion = 15f;
+    public float ExplosionSize = 20f;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -20,7 +20,7 @@ public class SuicideEnemy : MonoBehaviour
 
         Vector2 direction = collision.transform.position - transform.position;
         
-        rb.AddForce(direction * Explosion, ForceMode2D.Impulse);
+        rb.AddForce(direction * ExplosionSize, ForceMode2D.Impulse);
 
         Destroy(gameObject);
     }

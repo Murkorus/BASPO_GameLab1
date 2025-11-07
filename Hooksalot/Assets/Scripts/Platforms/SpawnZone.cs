@@ -206,6 +206,6 @@ public class SpawnZone : MonoBehaviour
 
     public void SpawnEnemy()
     {
-
+        // Talk about where enemies should spawn on Friday.
     }
 }
