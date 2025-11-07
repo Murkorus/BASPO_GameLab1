@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class Lava : MonoBehaviour
@@ -8,6 +9,7 @@ public class Lava : MonoBehaviour
     // Whenever a platform is engulfed by this GameObject, it is destroyed.
     // This GameObject will slowly rise, chasing the player.
 
+    [Header("Variables")]
     [SerializeField] bool doDistanceBasedSpeed; // If true, the lava will speed up and slow down based on distance to the player. Min and max speed capped by numbers below.
     [SerializeField] float minSpeed;
     [SerializeField] float maxSpeed;
@@ -15,6 +17,12 @@ public class Lava : MonoBehaviour
     [SerializeField] float speed;
     [SerializeField] float startDelay;
     [SerializeField] float destructionBuffer; // How far below the surface of the lava should the top of a platform be before it gets destroyed?
+
+    [Header("References")]
+    [SerializeField] GameObject deathScreen;
+    [SerializeField] TMP_Text scoreText;
+    [SerializeField] TMP_Text highscoreText;
+
     public List<Platform> platformsToDestroy = new List<Platform>();
 
     public float currentSpeed;
@@ -24,6 +32,14 @@ public class Lava : MonoBehaviour
         if(collision.gameObject.layer == 6) // Layer 6 is the player layer
         {
             GameManager.playerIsDead = true;
+
+            deathScreen.SetActive(true);
+            scoreText.text = ((int)GameManager.playerMaxY).ToString();
+            float highScore = PlayerPrefs.GetFloat("Highscore");
+            highScore = highScore > GameManager.playerMaxY ? highScore : GameManager.playerMaxY;
+            highscoreText.text = ((int)highScore).ToString();
+            PlayerPrefs.SetFloat("Highscore", highScore);
+
             return;
         }
 

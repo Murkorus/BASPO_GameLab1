@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 864000e14189b1d42b63f2783d66c047
+guid: e4374d5c9e116fc43841818450d8f39c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 945872395482459896
-    second: TowerWalls_0
+      213: 2006723878955416261
+    second: BigTrees_T_0
   - first:
-      213: -1288193645245823763
-    second: TowerWalls_1
+      213: 1670784058901321070
+    second: BigTrees_T_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -99,17 +99,43 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TowerWalls_0
+      name: BigTrees_T_0
       rect:
         serializedVersion: 2
-        x: 101
+        x: 0
         y: 0
-        width: 230
-        height: 2160
+        width: 374
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,20 +144,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8fe6497aee9602d00800000000000000
-      internalID: 945872395482459896
+      spriteID: 5ca7e6f5cb059db10800000000000000
+      internalID: 2006723878955416261
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TowerWalls_1
+      name: BigTrees_T_1
       rect:
         serializedVersion: 2
-        x: 3509
+        x: 3433
         y: 0
-        width: 230
-        height: 2160
+        width: 407
+        height: 1065
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +166,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: de4053d64ba6f1ee0800000000000000
-      internalID: -1288193645245823763
+      spriteID: e65d237df31df2710800000000000000
+      internalID: 1670784058901321070
       vertices: []
       indices: 
       edges: []
@@ -160,8 +186,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      TowerWalls_0: 945872395482459896
-      TowerWalls_1: -1288193645245823763
+      BigTrees_T_0: 2006723878955416261
+      BigTrees_T_1: 1670784058901321070
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

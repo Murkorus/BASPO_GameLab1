@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: e4374d5c9e116fc43841818450d8f39c
+guid: 093dd71f8ede4b444a7bf64639f8387a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2006723878955416261
-    second: BigTrees_T_0
+      213: 8813008350691596401
+    second: Background_Walls_T_0
   - first:
-      213: 1670784058901321070
-    second: BigTrees_T_1
+      213: 3018883718890484523
+    second: Background_Walls_T_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,12 +49,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 135
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -75,7 +75,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -129,13 +129,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BigTrees_T_0
+      name: Background_Walls_T_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 293
         y: 0
-        width: 374
-        height: 1024
+        width: 300
+        height: 2160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,20 +144,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5ca7e6f5cb059db10800000000000000
-      internalID: 2006723878955416261
+      spriteID: 1781681d6681e4a70800000000000000
+      internalID: 8813008350691596401
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BigTrees_T_1
+      name: Background_Walls_T_1
       rect:
         serializedVersion: 2
-        x: 3433
+        x: 3247
         y: 0
-        width: 407
-        height: 1065
+        width: 300
+        height: 2160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,8 +166,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e65d237df31df2710800000000000000
-      internalID: 1670784058901321070
+      spriteID: b237da26fba35e920800000000000000
+      internalID: 3018883718890484523
       vertices: []
       indices: 
       edges: []
@@ -176,7 +176,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -186,8 +186,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BigTrees_T_0: 2006723878955416261
-      BigTrees_T_1: 1670784058901321070
+      Background_Walls_T_0: 8813008350691596401
+      Background_Walls_T_1: 3018883718890484523
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

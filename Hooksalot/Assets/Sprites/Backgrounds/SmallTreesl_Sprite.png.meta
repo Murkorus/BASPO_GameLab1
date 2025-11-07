@@ -1,0 +1,2392 @@
+fileFormatVersion: 2
+guid: c1ca03fab181dab48a8d2cf49acd359f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5561546267000066672
+    second: SmallTreesl_Sprite_0
+  - first:
+      213: 8693215294367055768
+    second: SmallTreesl_Sprite_1
+  - first:
+      213: 6638662993035668843
+    second: SmallTreesl_Sprite_2
+  - first:
+      213: -1382388717550739934
+    second: SmallTreesl_Sprite_3
+  - first:
+      213: -4573569866699538876
+    second: SmallTreesl_Sprite_4
+  - first:
+      213: -7609342763104069264
+    second: SmallTreesl_Sprite_5
+  - first:
+      213: 7043588973730092402
+    second: SmallTreesl_Sprite_6
+  - first:
+      213: -5560919506777926432
+    second: SmallTreesl_Sprite_7
+  - first:
+      213: -6152162939792232807
+    second: SmallTreesl_Sprite_8
+  - first:
+      213: -4075272081368753806
+    second: SmallTreesl_Sprite_9
+  - first:
+      213: 1627973983258756343
+    second: SmallTreesl_Sprite_10
+  - first:
+      213: 3896905041029920164
+    second: SmallTreesl_Sprite_11
+  - first:
+      213: 1193138677372542227
+    second: SmallTreesl_Sprite_12
+  - first:
+      213: -2858380469547028909
+    second: SmallTreesl_Sprite_13
+  - first:
+      213: -5982858759162452603
+    second: SmallTreesl_Sprite_14
+  - first:
+      213: 7097177290403268399
+    second: SmallTreesl_Sprite_15
+  - first:
+      213: -3150547833525581695
+    second: SmallTreesl_Sprite_16
+  - first:
+      213: -3517828285599511780
+    second: SmallTreesl_Sprite_17
+  - first:
+      213: -7057385246478950176
+    second: SmallTreesl_Sprite_18
+  - first:
+      213: -6452405023102517590
+    second: SmallTreesl_Sprite_19
+  - first:
+      213: 226594363156097301
+    second: SmallTreesl_Sprite_20
+  - first:
+      213: 6834380095296337990
+    second: SmallTreesl_Sprite_21
+  - first:
+      213: -1794783519886900311
+    second: SmallTreesl_Sprite_22
+  - first:
+      213: 7579189805470877144
+    second: SmallTreesl_Sprite_23
+  - first:
+      213: -1782918707782809211
+    second: SmallTreesl_Sprite_24
+  - first:
+      213: 6482224549074143439
+    second: SmallTreesl_Sprite_25
+  - first:
+      213: -7088303531747468968
+    second: SmallTreesl_Sprite_26
+  - first:
+      213: -1098993068509974776
+    second: SmallTreesl_Sprite_27
+  - first:
+      213: 5476581715745316248
+    second: SmallTreesl_Sprite_28
+  - first:
+      213: 8695857160456952880
+    second: SmallTreesl_Sprite_29
+  - first:
+      213: 4152171084770250833
+    second: SmallTreesl_Sprite_30
+  - first:
+      213: 1492766605706853158
+    second: SmallTreesl_Sprite_31
+  - first:
+      213: 2506097231181949248
+    second: SmallTreesl_Sprite_32
+  - first:
+      213: -8249468297285387676
+    second: SmallTreesl_Sprite_33
+  - first:
+      213: -3940330215561471283
+    second: SmallTreesl_Sprite_34
+  - first:
+      213: -3572921617228950791
+    second: SmallTreesl_Sprite_35
+  - first:
+      213: 197003531698666529
+    second: SmallTreesl_Sprite_36
+  - first:
+      213: -7438987045115526083
+    second: SmallTreesl_Sprite_37
+  - first:
+      213: 3337079926099905474
+    second: SmallTreesl_Sprite_38
+  - first:
+      213: 9024624994391972957
+    second: SmallTreesl_Sprite_39
+  - first:
+      213: -6313656881194494827
+    second: SmallTreesl_Sprite_40
+  - first:
+      213: -792725961395406856
+    second: SmallTreesl_Sprite_41
+  - first:
+      213: -7824252458940440301
+    second: SmallTreesl_Sprite_42
+  - first:
+      213: 2290740491076847165
+    second: SmallTreesl_Sprite_43
+  - first:
+      213: 8250763448440886211
+    second: SmallTreesl_Sprite_44
+  - first:
+      213: 3937254127315720944
+    second: SmallTreesl_Sprite_45
+  - first:
+      213: 5491772607072292342
+    second: SmallTreesl_Sprite_46
+  - first:
+      213: -2801929049114997818
+    second: SmallTreesl_Sprite_47
+  - first:
+      213: -866614276720951881
+    second: SmallTreesl_Sprite_48
+  - first:
+      213: 4024495314533605727
+    second: SmallTreesl_Sprite_49
+  - first:
+      213: -1413914573951283399
+    second: SmallTreesl_Sprite_50
+  - first:
+      213: 8869190426840874520
+    second: SmallTreesl_Sprite_51
+  - first:
+      213: 7391542541102391088
+    second: SmallTreesl_Sprite_52
+  - first:
+      213: -5639439751807973952
+    second: SmallTreesl_Sprite_53
+  - first:
+      213: -284451060208106269
+    second: SmallTreesl_Sprite_54
+  - first:
+      213: 7457470560660183414
+    second: SmallTreesl_Sprite_55
+  - first:
+      213: 9134316814051941035
+    second: SmallTreesl_Sprite_56
+  - first:
+      213: 2582023134693056556
+    second: SmallTreesl_Sprite_57
+  - first:
+      213: 8375493776044506776
+    second: SmallTreesl_Sprite_58
+  - first:
+      213: -3472200685876433379
+    second: SmallTreesl_Sprite_59
+  - first:
+      213: 2063147598467532293
+    second: SmallTreesl_Sprite_60
+  - first:
+      213: 5413278147400344457
+    second: SmallTreesl_Sprite_61
+  - first:
+      213: -474759336831367497
+    second: SmallTreesl_Sprite_62
+  - first:
+      213: 4151298987700330090
+    second: SmallTreesl_Sprite_63
+  - first:
+      213: 4083012919272848341
+    second: SmallTreesl_Sprite_64
+  - first:
+      213: 2035048599481774377
+    second: SmallTreesl_Sprite_65
+  - first:
+      213: -4081202998951318852
+    second: SmallTreesl_Sprite_66
+  - first:
+      213: -9148266140471547401
+    second: SmallTreesl_Sprite_67
+  - first:
+      213: 3279334773301528548
+    second: SmallTreesl_Sprite_68
+  - first:
+      213: -8471900816151893110
+    second: SmallTreesl_Sprite_69
+  - first:
+      213: -2167166139841684982
+    second: SmallTreesl_Sprite_70
+  - first:
+      213: -1501200140863044667
+    second: SmallTreesl_Sprite_71
+  - first:
+      213: 8671076637663728995
+    second: SmallTreesl_Sprite_72
+  - first:
+      213: -6101058352987147391
+    second: SmallTreesl_Sprite_73
+  - first:
+      213: -64325829457601980
+    second: SmallTreesl_Sprite_74
+  - first:
+      213: 9072285516901370770
+    second: SmallTreesl_Sprite_75
+  - first:
+      213: 4205154931161308806
+    second: SmallTreesl_Sprite_76
+  - first:
+      213: 8257180472615516143
+    second: SmallTreesl_Sprite_77
+  - first:
+      213: -4722487422839420707
+    second: SmallTreesl_Sprite_78
+  - first:
+      213: 8347324365142021601
+    second: SmallTreesl_Sprite_79
+  - first:
+      213: -682156693053640397
+    second: SmallTreesl_Sprite_80
+  - first:
+      213: -8199414724941683536
+    second: SmallTreesl_Sprite_81
+  - first:
+      213: 6843331112898244696
+    second: SmallTreesl_Sprite_82
+  - first:
+      213: -6773744925598658372
+    second: SmallTreesl_Sprite_83
+  - first:
+      213: 2644070997894839863
+    second: SmallTreesl_Sprite_84
+  - first:
+      213: -5166653128487574980
+    second: SmallTreesl_Sprite_85
+  - first:
+      213: -7856105954435442516
+    second: SmallTreesl_Sprite_86
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 135
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 828
+        width: 70
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 072507e0dd49e2d40800000000000000
+      internalID: 5561546267000066672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_1
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 870
+        width: 70
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89fbdb8604184a870800000000000000
+      internalID: 8693215294367055768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_2
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 914
+        width: 70
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6d2c6ba1d4412c50800000000000000
+      internalID: 6638662993035668843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_3
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 894
+        width: 70
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22e51ec19c4c0dce0800000000000000
+      internalID: -1382388717550739934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_4
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 879
+        width: 70
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44e71f3207a6780c0800000000000000
+      internalID: -4573569866699538876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_5
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 903
+        width: 70
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0791efea21f266690800000000000000
+      internalID: -7609342763104069264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_6
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 819
+        width: 70
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2755a036adadfb160800000000000000
+      internalID: 7043588973730092402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_7
+      rect:
+        serializedVersion: 2
+        x: 1523
+        y: 817
+        width: 70
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e416fdeb25a3d2b0800000000000000
+      internalID: -5560919506777926432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_8
+      rect:
+        serializedVersion: 2
+        x: 1889
+        y: 803
+        width: 70
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99e6c5dd6602f9aa0800000000000000
+      internalID: -6152162939792232807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_9
+      rect:
+        serializedVersion: 2
+        x: 2133
+        y: 888
+        width: 70
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 279d2fa32a9b177c0800000000000000
+      internalID: -4075272081368753806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_10
+      rect:
+        serializedVersion: 2
+        x: 2232
+        y: 819
+        width: 70
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f447bf56b9b79610800000000000000
+      internalID: 1627973983258756343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_11
+      rect:
+        serializedVersion: 2
+        x: 2351
+        y: 863
+        width: 70
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a57406fc76941630800000000000000
+      internalID: 3896905041029920164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_12
+      rect:
+        serializedVersion: 2
+        x: 2570
+        y: 830
+        width: 71
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31dd1983e41ee8010800000000000000
+      internalID: 1193138677372542227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_13
+      rect:
+        serializedVersion: 2
+        x: 3112
+        y: 849
+        width: 71
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35e2cb77b1ef458d0800000000000000
+      internalID: -2858380469547028909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_14
+      rect:
+        serializedVersion: 2
+        x: 3260
+        y: 892
+        width: 70
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 585a9c638ad98fca0800000000000000
+      internalID: -5982858759162452603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_15
+      rect:
+        serializedVersion: 2
+        x: 3409
+        y: 865
+        width: 70
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f27c476a42d3e7260800000000000000
+      internalID: 7097177290403268399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_16
+      rect:
+        serializedVersion: 2
+        x: 3555
+        y: 846
+        width: 70
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 188c4de00710744d0800000000000000
+      internalID: -3150547833525581695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_17
+      rect:
+        serializedVersion: 2
+        x: 3635
+        y: 901
+        width: 70
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1b050000d92e2fc0800000000000000
+      internalID: -3517828285599511780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_18
+      rect:
+        serializedVersion: 2
+        x: 3719
+        y: 870
+        width: 70
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e02a8c82812f0e90800000000000000
+      internalID: -7057385246478950176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_19
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 746
+        width: 70
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aae370b51d37476a0800000000000000
+      internalID: -6452405023102517590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_20
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 728
+        width: 71
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 519660c6f56052300800000000000000
+      internalID: 226594363156097301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_21
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 679
+        width: 119
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64873209c7898de50800000000000000
+      internalID: 6834380095296337990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_22
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 737
+        width: 71
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a38a68d5e5a717e0800000000000000
+      internalID: -1794783519886900311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_23
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 781
+        width: 70
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d58a58c8f0be2960800000000000000
+      internalID: 7579189805470877144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_24
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 734
+        width: 70
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 589053fa1ecc147e0800000000000000
+      internalID: -1782918707782809211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_25
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 758
+        width: 70
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc881e112ec75f950800000000000000
+      internalID: 6482224549074143439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_26
+      rect:
+        serializedVersion: 2
+        x: 1018
+        y: 795
+        width: 70
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8599b0a4e7941ad90800000000000000
+      internalID: -7088303531747468968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_27
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 754
+        width: 70
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80fa8dc70a79fb0f0800000000000000
+      internalID: -1098993068509974776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_28
+      rect:
+        serializedVersion: 2
+        x: 1268
+        y: 593
+        width: 112
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89d1666ed0ab00c40800000000000000
+      internalID: 5476581715745316248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_29
+      rect:
+        serializedVersion: 2
+        x: 1359
+        y: 793
+        width: 70
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03cd29ac304eda870800000000000000
+      internalID: 8695857160456952880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_30
+      rect:
+        serializedVersion: 2
+        x: 1609
+        y: 695
+        width: 70
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 150116a3a997f9930800000000000000
+      internalID: 4152171084770250833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_31
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 779
+        width: 70
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62bf8b1a15f57b410800000000000000
+      internalID: 1492766605706853158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_32
+      rect:
+        serializedVersion: 2
+        x: 1975
+        y: 595
+        width: 114
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 049a035672277c220800000000000000
+      internalID: 2506097231181949248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_33
+      rect:
+        serializedVersion: 2
+        x: 2068
+        y: 795
+        width: 70
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46a357a8a40048d80800000000000000
+      internalID: -8249468297285387676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_34
+      rect:
+        serializedVersion: 2
+        x: 2271
+        y: 660
+        width: 117
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dca58b3bb822159c0800000000000000
+      internalID: -3940330215561471283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_35
+      rect:
+        serializedVersion: 2
+        x: 2435
+        y: 684
+        width: 70
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f211c228be6a6ec0800000000000000
+      internalID: -3572921617228950791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_36
+      rect:
+        serializedVersion: 2
+        x: 2659
+        y: 704
+        width: 70
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12c75661ba5ebb200800000000000000
+      internalID: 197003531698666529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_37
+      rect:
+        serializedVersion: 2
+        x: 2823
+        y: 728
+        width: 70
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d34082722b863c890800000000000000
+      internalID: -7438987045115526083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_38
+      rect:
+        serializedVersion: 2
+        x: 3031
+        y: 730
+        width: 70
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cb854e1380bf4e20800000000000000
+      internalID: 3337079926099905474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_39
+      rect:
+        serializedVersion: 2
+        x: 3195
+        y: 754
+        width: 70
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5c58dd2e98ed3d70800000000000000
+      internalID: 9024624994391972957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_40
+      rect:
+        serializedVersion: 2
+        x: 3227
+        y: 472
+        width: 170
+        height: 374
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59493ba84826168a0800000000000000
+      internalID: -6313656881194494827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_41
+      rect:
+        serializedVersion: 2
+        x: 3491
+        y: 646
+        width: 85
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f7fbca20fbaff4f0800000000000000
+      internalID: -792725961395406856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_42
+      rect:
+        serializedVersion: 2
+        x: 3645
+        y: 756
+        width: 71
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 311e0efd7dbaa6390800000000000000
+      internalID: -7824252458940440301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_43
+      rect:
+        serializedVersion: 2
+        x: 3757
+        y: 750
+        width: 70
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d364d3bf6585acf10800000000000000
+      internalID: 2290740491076847165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_44
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 670
+        width: 70
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c3981654a9908270800000000000000
+      internalID: 8250763448440886211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_45
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 602
+        width: 70
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fa1811b4cfe3a630800000000000000
+      internalID: 3937254127315720944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_46
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 612
+        width: 70
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fdc3c7e612b63c40800000000000000
+      internalID: 5491772607072292342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_47
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 611
+        width: 70
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cb07a5006c8d19d0800000000000000
+      internalID: -2801929049114997818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_48
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 621
+        width: 70
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bdf3c628ea29f3f0800000000000000
+      internalID: -866614276720951881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_49
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 592
+        width: 71
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f51eff67a21e9d730800000000000000
+      internalID: 4024495314533605727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_50
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 595
+        width: 101
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93fc2ecaf24c06ce0800000000000000
+      internalID: -1413914573951283399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_51
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 653
+        width: 71
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81e3525c3b1b51b70800000000000000
+      internalID: 8869190426840874520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_52
+      rect:
+        serializedVersion: 2
+        x: 1464
+        y: 651
+        width: 71
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03f989077c8049660800000000000000
+      internalID: 7391542541102391088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_53
+      rect:
+        serializedVersion: 2
+        x: 1676
+        y: 579
+        width: 70
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c5c44dbc6facb1b0800000000000000
+      internalID: -5639439751807973952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_54
+      rect:
+        serializedVersion: 2
+        x: 1830
+        y: 637
+        width: 71
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e40050944d6d0cf0800000000000000
+      internalID: -284451060208106269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_55
+      rect:
+        serializedVersion: 2
+        x: 2173
+        y: 653
+        width: 71
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 679551ba6f14e7760800000000000000
+      internalID: 7457470560660183414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_56
+      rect:
+        serializedVersion: 2
+        x: 2521
+        y: 562
+        width: 70
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baa91772fbc93ce70800000000000000
+      internalID: 9134316814051941035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_57
+      rect:
+        serializedVersion: 2
+        x: 2672
+        y: 591
+        width: 70
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2068316c5035d320800000000000000
+      internalID: 2582023134693056556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_58
+      rect:
+        serializedVersion: 2
+        x: 2764
+        y: 562
+        width: 71
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89eb0abc63bbb3470800000000000000
+      internalID: 8375493776044506776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_59
+      rect:
+        serializedVersion: 2
+        x: 2909
+        y: 606
+        width: 70
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1ea7796fd340dfc0800000000000000
+      internalID: -3472200685876433379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_60
+      rect:
+        serializedVersion: 2
+        x: 3136
+        y: 588
+        width: 71
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5068bdd4fc5c1ac10800000000000000
+      internalID: 2063147598467532293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_61
+      rect:
+        serializedVersion: 2
+        x: 3432
+        y: 586
+        width: 71
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 983ae265bc3df1b40800000000000000
+      internalID: 5413278147400344457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_62
+      rect:
+        serializedVersion: 2
+        x: 3612
+        y: 580
+        width: 94
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b6cd5606e05969f0800000000000000
+      internalID: -474759336831367497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_63
+      rect:
+        serializedVersion: 2
+        x: 3751
+        y: 588
+        width: 70
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6e115e4f606c9930800000000000000
+      internalID: 4151298987700330090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_64
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 541
+        width: 70
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dbb69a0e96c9a830800000000000000
+      internalID: 4083012919272848341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_65
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 534
+        width: 70
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92174c84be1fd3c10800000000000000
+      internalID: 2035048599481774377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_66
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 466
+        width: 70
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cba6f3fde77ac57c0800000000000000
+      internalID: -4081202998951318852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_67
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 476
+        width: 70
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f9a5723a64da0180800000000000000
+      internalID: -9148266140471547401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_68
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 527
+        width: 70
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e749360a99828d20800000000000000
+      internalID: 3279334773301528548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_69
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 537
+        width: 70
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8bace00813cd6a80800000000000000
+      internalID: -8471900816151893110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_70
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 525
+        width: 70
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0a5b71c0edace1e0800000000000000
+      internalID: -2167166139841684982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_71
+      rect:
+        serializedVersion: 2
+        x: 1555
+        y: 535
+        width: 70
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c38713fc6aaa2be0800000000000000
+      internalID: -1501200140863044667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_72
+      rect:
+        serializedVersion: 2
+        x: 1771
+        y: 511
+        width: 70
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3659228b24ad55870800000000000000
+      internalID: 8671076637663728995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_73
+      rect:
+        serializedVersion: 2
+        x: 1921
+        y: 521
+        width: 70
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1837544b0cfa45ba0800000000000000
+      internalID: -6101058352987147391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_74
+      rect:
+        serializedVersion: 2
+        x: 2114
+        y: 527
+        width: 70
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44a1c49bff77b1ff0800000000000000
+      internalID: -64325829457601980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_75
+      rect:
+        serializedVersion: 2
+        x: 2222
+        y: 460
+        width: 70
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29bc3df4c9b37ed70800000000000000
+      internalID: 9072285516901370770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_76
+      rect:
+        serializedVersion: 2
+        x: 2264
+        y: 537
+        width: 70
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68e1a594126bb5a30800000000000000
+      internalID: 4205154931161308806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_77
+      rect:
+        serializedVersion: 2
+        x: 2376
+        y: 518
+        width: 71
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe73a8434e5679270800000000000000
+      internalID: 8257180472615516143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_78
+      rect:
+        serializedVersion: 2
+        x: 2610
+        y: 504
+        width: 70
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd80861b5ba567eb0800000000000000
+      internalID: -4722487422839420707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_79
+      rect:
+        serializedVersion: 2
+        x: 2705
+        y: 436
+        width: 70
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e5d049b847a7d370800000000000000
+      internalID: 8347324365142021601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_80
+      rect:
+        serializedVersion: 2
+        x: 2855
+        y: 446
+        width: 70
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 331f1651a1e7886f0800000000000000
+      internalID: -682156693053640397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_81
+      rect:
+        serializedVersion: 2
+        x: 2982
+        y: 530
+        width: 70
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b46eb100c3d53e80800000000000000
+      internalID: -8199414724941683536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_82
+      rect:
+        serializedVersion: 2
+        x: 3077
+        y: 462
+        width: 70
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 850bda0c36568fe50800000000000000
+      internalID: 6843331112898244696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_83
+      rect:
+        serializedVersion: 2
+        x: 3373
+        y: 460
+        width: 70
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb0569601e2def1a0800000000000000
+      internalID: -6773744925598658372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_84
+      rect:
+        serializedVersion: 2
+        x: 3535
+        y: 532
+        width: 70
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73e3f6e4090a1b420800000000000000
+      internalID: 2644070997894839863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_85
+      rect:
+        serializedVersion: 2
+        x: 2317
+        y: 392
+        width: 70
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3266de8a5c5c48b0800000000000000
+      internalID: -5166653128487574980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallTreesl_Sprite_86
+      rect:
+        serializedVersion: 2
+        x: 2467
+        y: 402
+        width: 70
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca85b04024189f290800000000000000
+      internalID: -7856105954435442516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SmallTreesl_Sprite_0: 5561546267000066672
+      SmallTreesl_Sprite_1: 8693215294367055768
+      SmallTreesl_Sprite_10: 1627973983258756343
+      SmallTreesl_Sprite_11: 3896905041029920164
+      SmallTreesl_Sprite_12: 1193138677372542227
+      SmallTreesl_Sprite_13: -2858380469547028909
+      SmallTreesl_Sprite_14: -5982858759162452603
+      SmallTreesl_Sprite_15: 7097177290403268399
+      SmallTreesl_Sprite_16: -3150547833525581695
+      SmallTreesl_Sprite_17: -3517828285599511780
+      SmallTreesl_Sprite_18: -7057385246478950176
+      SmallTreesl_Sprite_19: -6452405023102517590
+      SmallTreesl_Sprite_2: 6638662993035668843
+      SmallTreesl_Sprite_20: 226594363156097301
+      SmallTreesl_Sprite_21: 6834380095296337990
+      SmallTreesl_Sprite_22: -1794783519886900311
+      SmallTreesl_Sprite_23: 7579189805470877144
+      SmallTreesl_Sprite_24: -1782918707782809211
+      SmallTreesl_Sprite_25: 6482224549074143439
+      SmallTreesl_Sprite_26: -7088303531747468968
+      SmallTreesl_Sprite_27: -1098993068509974776
+      SmallTreesl_Sprite_28: 5476581715745316248
+      SmallTreesl_Sprite_29: 8695857160456952880
+      SmallTreesl_Sprite_3: -1382388717550739934
+      SmallTreesl_Sprite_30: 4152171084770250833
+      SmallTreesl_Sprite_31: 1492766605706853158
+      SmallTreesl_Sprite_32: 2506097231181949248
+      SmallTreesl_Sprite_33: -8249468297285387676
+      SmallTreesl_Sprite_34: -3940330215561471283
+      SmallTreesl_Sprite_35: -3572921617228950791
+      SmallTreesl_Sprite_36: 197003531698666529
+      SmallTreesl_Sprite_37: -7438987045115526083
+      SmallTreesl_Sprite_38: 3337079926099905474
+      SmallTreesl_Sprite_39: 9024624994391972957
+      SmallTreesl_Sprite_4: -4573569866699538876
+      SmallTreesl_Sprite_40: -6313656881194494827
+      SmallTreesl_Sprite_41: -792725961395406856
+      SmallTreesl_Sprite_42: -7824252458940440301
+      SmallTreesl_Sprite_43: 2290740491076847165
+      SmallTreesl_Sprite_44: 8250763448440886211
+      SmallTreesl_Sprite_45: 3937254127315720944
+      SmallTreesl_Sprite_46: 5491772607072292342
+      SmallTreesl_Sprite_47: -2801929049114997818
+      SmallTreesl_Sprite_48: -866614276720951881
+      SmallTreesl_Sprite_49: 4024495314533605727
+      SmallTreesl_Sprite_5: -7609342763104069264
+      SmallTreesl_Sprite_50: -1413914573951283399
+      SmallTreesl_Sprite_51: 8869190426840874520
+      SmallTreesl_Sprite_52: 7391542541102391088
+      SmallTreesl_Sprite_53: -5639439751807973952
+      SmallTreesl_Sprite_54: -284451060208106269
+      SmallTreesl_Sprite_55: 7457470560660183414
+      SmallTreesl_Sprite_56: 9134316814051941035
+      SmallTreesl_Sprite_57: 2582023134693056556
+      SmallTreesl_Sprite_58: 8375493776044506776
+      SmallTreesl_Sprite_59: -3472200685876433379
+      SmallTreesl_Sprite_6: 7043588973730092402
+      SmallTreesl_Sprite_60: 2063147598467532293
+      SmallTreesl_Sprite_61: 5413278147400344457
+      SmallTreesl_Sprite_62: -474759336831367497
+      SmallTreesl_Sprite_63: 4151298987700330090
+      SmallTreesl_Sprite_64: 4083012919272848341
+      SmallTreesl_Sprite_65: 2035048599481774377
+      SmallTreesl_Sprite_66: -4081202998951318852
+      SmallTreesl_Sprite_67: -9148266140471547401
+      SmallTreesl_Sprite_68: 3279334773301528548
+      SmallTreesl_Sprite_69: -8471900816151893110
+      SmallTreesl_Sprite_7: -5560919506777926432
+      SmallTreesl_Sprite_70: -2167166139841684982
+      SmallTreesl_Sprite_71: -1501200140863044667
+      SmallTreesl_Sprite_72: 8671076637663728995
+      SmallTreesl_Sprite_73: -6101058352987147391
+      SmallTreesl_Sprite_74: -64325829457601980
+      SmallTreesl_Sprite_75: 9072285516901370770
+      SmallTreesl_Sprite_76: 4205154931161308806
+      SmallTreesl_Sprite_77: 8257180472615516143
+      SmallTreesl_Sprite_78: -4722487422839420707
+      SmallTreesl_Sprite_79: 8347324365142021601
+      SmallTreesl_Sprite_8: -6152162939792232807
+      SmallTreesl_Sprite_80: -682156693053640397
+      SmallTreesl_Sprite_81: -8199414724941683536
+      SmallTreesl_Sprite_82: 6843331112898244696
+      SmallTreesl_Sprite_83: -6773744925598658372
+      SmallTreesl_Sprite_84: 2644070997894839863
+      SmallTreesl_Sprite_85: -5166653128487574980
+      SmallTreesl_Sprite_86: -7856105954435442516
+      SmallTreesl_Sprite_9: -4075272081368753806
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

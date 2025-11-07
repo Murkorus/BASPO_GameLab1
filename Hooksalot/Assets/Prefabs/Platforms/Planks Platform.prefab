@@ -90,84 +90,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &2778567110065316123
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4184033099800990080}
-  - component: {fileID: 8029808353905129192}
-  m_Layer: 7
-  m_Name: Collider
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4184033099800990080
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2778567110065316123}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2888583560629558324}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &8029808353905129192
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2778567110065316123}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 0.95, y: 0.95}
-  m_EdgeRadius: 0
 --- !u!1 &6264021787171310067
 GameObject:
   m_ObjectHideFlags: 0
@@ -179,7 +101,7 @@ GameObject:
   - component: {fileID: 2888583560629558324}
   - component: {fileID: 1127048592170105967}
   - component: {fileID: 4508264053279101855}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Planks Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -201,7 +123,6 @@ Transform:
   m_Children:
   - {fileID: 4706891247979208440}
   - {fileID: 3740722686645638791}
-  - {fileID: 4184033099800990080}
   - {fileID: 2027406880148905238}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -217,18 +138,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50fc7d007de16fd4e90328bdd5911cee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Platform
-  durability: 11
+  durability: 15
   platformScale: {x: 0, y: 0}
   onlyCollideFromTop: 0
   respawnTime: 10
-  slowDownMultiplier: 1
-  doDurabilityBasedSlowdown: 1
-  slowDownLimit: 0.2
-  triggerCollider: {fileID: 4508264053279101855}
-  platformCollider: {fileID: 8029808353905129192}
+  slowDownMultiplier: 0.2
+  platformCollider: {fileID: 4508264053279101855}
   texture: {fileID: 1767522529495948271}
   outline: {fileID: 8844374414788644949}
   minimapMarker: {fileID: 7533614793205992312}
+  platformTopY: 0
   hasBeenDestroyed: 0
 --- !u!61 &4508264053279101855
 BoxCollider2D:
@@ -260,7 +179,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -274,7 +193,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1.25}
+  m_Size: {x: 0.95, y: 0.95}
   m_EdgeRadius: 0
 --- !u!1 &7418492715897887524
 GameObject:
@@ -355,7 +274,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -3
-  m_Sprite: {fileID: 21300000, guid: 43ce8e60bcaca4b4e99b22565b7b1062, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fa195db249d65c14d82bf76e827b5bd4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
