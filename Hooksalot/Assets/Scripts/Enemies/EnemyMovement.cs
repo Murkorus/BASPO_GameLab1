@@ -7,19 +7,13 @@ public class EnemyMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Rigidbody2D rb = GameManager.playerRB;
 
-        Vector2 direction = collision.transform.position - transform.position;
+        Rigidbody2D rb = GameManager.playerRB;
+        Vector2 direction = transform.position - collision.transform.position;
         rb.AddForce(direction * EnemySpeed, ForceMode2D.Impulse);
 
+
+
     }
-
-
-
-
-
-
-
-
 
 }
