@@ -64,6 +64,8 @@ public class SpawnerManager : MonoBehaviour
         {
             Instantiate(checkPointPrefab, Vector3.up * checkPointSpawns[i], Quaternion.identity);
         }
+
+        spawnNextCheckpointAt = checkPointInterval;
     }
 
     private void Update()
