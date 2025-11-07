@@ -214,12 +214,12 @@ public class SpawnZone : MonoBehaviour
     public void SpawnEnemy()
     {
         // Take advantage of the fact that platforms are already guaranteed to be somewhat spaced apart.
-        // We can spawn powerups based on the position of the last spawned platform.
+        // We can spawn enemies based on the position of the last spawned platform.
 
-        // We could also, instead of spawning the powerup on top of a platform, send a circlecast downwards, and spawn the powerup somewhere in between the bottom of the platform and the place the circlecast hit.
-        // This would make the powerups spawn mid-air, but might not always work if platforms are too densely packed.
+        // We could also, instead of spawning the enemy on top of a platform, send a circlecast downwards, and spawn the powerup somewhere in between the bottom of the platform and the place the circlecast hit.
+        // This would make the enemies spawn mid-air, but might not always work if platforms are too densely packed.
 
-        // First, decide between if the powerup should be spawned above or below the platform.
+        // First, decide between if the enemy should be spawned above or below the platform.
         if(Random.Range(0f, 1f) <= sm.enemySpawningBehaviour)
         {
             // Spawn above
@@ -247,7 +247,7 @@ public class SpawnZone : MonoBehaviour
                 // Pick a random spot on that vector.
                 Vector2 spawnPoint = circleCastOrigin + belowPlatformVector * Random.Range(0.2f, 0.8f);
 
-                // Spawn the powerup
+                // Spawn the enemy
                 Instantiate(enemySpawnOptions[0].spawnableObject, spawnPoint, Quaternion.identity, sm.enemyParent);
             }
 
