@@ -37,6 +37,8 @@ public class SpawnerManager : MonoBehaviour
     public float defaultYScaleMultiplier;
     [Range(0, 1)] public float defaultPowerupSpawnChance; // The chance that a powerup will spawn on top of any spawned platform.
     [Range(0, 1)] public float powerupSpawningBehaviour; // The chance that when a powerup spawns, it will spawn ontop of a platform rather than below it. This does not affect the chance to spawn a powerup, merely how and where they spawn.
+    [Range(0, 1)] public float defaultEnemySpawnChance;
+    [Range(0, 1)] public float enemySpawningBehaviour;
 
     [Header("Enemy Variables")]
     [SerializeField] float timeBetweenWaves;

@@ -1109,7 +1109,7 @@ MonoBehaviour:
   checkPointPrefab: {fileID: 6264021787171310067, guid: 164e2482fa4716443b642724d03314b0, type: 3}
   platformParent: {fileID: 2045397306}
   powerupParent: {fileID: 19447414}
-  enemyParent: {fileID: 405512578}
+  enemyParent: {fileID: 1449590787387078679, guid: 2e6d2a4e2657fc2459eb63407fd6dc46, type: 3}
   spawnInterval: 2
   activationDistance: 100
   spawningDistance: 80
@@ -1121,6 +1121,8 @@ MonoBehaviour:
   defaultYScaleMultiplier: 0.5
   defaultPowerupSpawnChance: 0.25
   powerupSpawningBehaviour: 0.5
+  defaultEnemySpawnChance: 0
+  enemySpawningBehaviour: 0
   timeBetweenWaves: 0
   waveSizeMinMax: {x: 0, y: 0}
 --- !u!4 &231624962
@@ -6171,7 +6173,9 @@ MonoBehaviour:
   powerupSpawnOptions:
   - spawnableObject: {fileID: 7029103513800829938, guid: 8d03367240b3d5c43b2bcde3ea52fd5d, type: 3}
     spawnWeight: 1
-  enemySpawnOptions: []
+  enemySpawnOptions:
+  - spawnableObject: {fileID: 0}
+    spawnWeight: 0
   isInfinite: 1
   useDefaultValues: 1
   myEdgeDistance: 0
@@ -6180,6 +6184,7 @@ MonoBehaviour:
   myXScaleMultiplier: 0
   myYScaleMultiplier: 0
   myPowerupSpawnChance: 0
+  myEnemySpawnChance: 0
   maxPlatformsPerY: 4
   isActive: 0
   isExhausted: 0

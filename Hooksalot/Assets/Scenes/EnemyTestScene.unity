@@ -705,6 +705,11 @@ Transform:
   - {fileID: 743878665}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &310256462 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1449590787387078679, guid: 2e6d2a4e2657fc2459eb63407fd6dc46, type: 3}
+  m_PrefabInstance: {fileID: 2861519446181940501}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &314080859
 GameObject:
   m_ObjectHideFlags: 0
@@ -842,7 +847,7 @@ MonoBehaviour:
   checkPointPrefab: {fileID: 6264021787171310067, guid: 164e2482fa4716443b642724d03314b0, type: 3}
   platformParent: {fileID: 1326922419}
   powerupParent: {fileID: 1321584616}
-  enemyParent: {fileID: 1729674086}
+  enemyParent: {fileID: 310256462}
   spawnInterval: 2
   activationDistance: 100
   spawningDistance: 80
@@ -854,6 +859,8 @@ MonoBehaviour:
   defaultYScaleMultiplier: 0.5
   defaultPowerupSpawnChance: 0.25
   powerupSpawningBehaviour: 0.5
+  defaultEnemySpawnChance: 0
+  enemySpawningBehaviour: 0
   timeBetweenWaves: 0
   waveSizeMinMax: {x: 0, y: 0}
 --- !u!4 &448490318
@@ -1998,6 +2005,7 @@ MonoBehaviour:
   myXScaleMultiplier: 0
   myYScaleMultiplier: 0
   myPowerupSpawnChance: 0
+  myEnemySpawnChance: 0
   maxPlatformsPerY: 4
   isActive: 0
   isExhausted: 0
