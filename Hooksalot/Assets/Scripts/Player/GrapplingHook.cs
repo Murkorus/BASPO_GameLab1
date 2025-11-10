@@ -3,11 +3,9 @@ using UnityEngine;
 
 public class GrapplingHook : MonoBehaviour
 {
-    [SerializeField] Transform grapplePivot;
-    [SerializeField] LayerMask grappleableLayers;
+    public LayerMask grappleableLayers;
 
-    [SerializeField] bool useMaxDistance;
-    [SerializeField] float maxDistance;
+    public float maxDistance;
     [SerializeField] float reelingSpeed;
     [SerializeField] float hookCooldown;
     [SerializeField] float hookLaunchSpeed; // How many units per second does the hook travel while in the process of being launched?
@@ -132,9 +130,9 @@ public class GrapplingHook : MonoBehaviour
     {
         bool successfulGrapple = false;
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        Vector2 grappleDirection = mousePos - (Vector2)grapplePivot.position;
+        Vector2 grappleDirection = mousePos - (Vector2)transform.position;
         Vector2 tempGrapplePoint = mousePos;
-        RaycastHit2D hit = Physics2D.Raycast(grapplePivot.position, grappleDirection, useMaxDistance ? maxDistance : Mathf.Infinity, grappleableLayers);
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, grappleDirection, maxDistance, grappleableLayers);
         if (hit)
         {
             tempGrapplePoint = hit.point;
