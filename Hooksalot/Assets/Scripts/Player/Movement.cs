@@ -53,7 +53,7 @@ public class Movement : MonoBehaviour
             springJoint.distance = Vector2.Distance(transform.position, grapplingHook.transform.position);
             springJoint.dampingRatio = 0;
         }
-        else
+        else if (hookScript.reelDirection != 1)
         {
             springJoint.dampingRatio = originalDampingRatio;
         }

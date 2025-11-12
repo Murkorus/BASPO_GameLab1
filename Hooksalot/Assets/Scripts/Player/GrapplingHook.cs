@@ -6,6 +6,7 @@ public class GrapplingHook : MonoBehaviour
     public LayerMask grappleableLayers;
 
     public float maxDistance;
+    public float distanceWhenHooked;
     [SerializeField] float reelingSpeed;
     [SerializeField] float hookCooldown;
     [SerializeField] float hookLaunchSpeed; // How many units per second does the hook travel while in the process of being launched?
@@ -19,13 +20,15 @@ public class GrapplingHook : MonoBehaviour
     
 
     private Vector2 grapplePoint;
-    [HideInInspector] public bool hookLaunched;
-    [HideInInspector] public bool isReeling;
     public float springDistance;
     private float timeSinceUnhooked;
+    [HideInInspector] public bool hookLaunched;
+    [HideInInspector] public bool isReeling;
     [HideInInspector] public bool isHookBeingLaunched;
+    [HideInInspector] public int reelDirection; // 1 if unreeling (Chain gets longer), 0 if standing still (reached max length), -1 if reeling in (chain gets shorter)
     [HideInInspector] public float hookLaunchDistanceTraveled; // For keeping track of how far the hook has travled between frames when it's being launched.
     [HideInInspector] public GameObject grappledObject;
+    private float originalDampingRatio;
     private bool doChainBreak;
     private float chainBreakTimeTracker;
 
@@ -33,6 +36,7 @@ public class GrapplingHook : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         springJoint = GetComponent<SpringJoint2D>();
+        originalDampingRatio = springJoint.dampingRatio;
     }
 
     // Clean this up a bit later. Currently a lot of functionality from the SwitchHook() function was put here and there as part of making the chain visually extend when grappling.
@@ -44,67 +48,50 @@ public class GrapplingHook : MonoBehaviour
             return;
         }
 
-        //Debug.Log(hookLaunchDistanceTraveled);
-        if (isHookBeingLaunched)
-        {
-            hookLaunchDistanceTraveled += hookLaunchSpeed * Time.deltaTime;
-            if(Vector2.Distance(transform.position, grapplePoint) < hookLaunchDistanceTraveled)
-            {
-                isHookBeingLaunched = false;
-                hookLaunchDistanceTraveled = 0;
-                springDistance = Vector2.Distance(transform.position, grapplePoint);
-                SwitchHookState();
-            }
-            else if(hookLaunchDistanceTraveled > maxDistance) // If the hook has extended further than the maximum distance, the grapple has failed.
-            {
-                isHookBeingLaunched = false;
-                hookLaunchDistanceTraveled = 0;
-            }
-        }
-
-        if (!hookLaunched)
+        if (!hookLaunched) // If the hook is not currently attached to something, count down for the next time the player can launch the hook.
         {
             timeSinceUnhooked += Time.deltaTime;
         }
 
-        if(hookLaunched && !doChainBreak)
+        if (isHookBeingLaunched) // If the hook launching animation should be playing, do the logic for extending the hook chain.
+        {
+            ExtendHookChain();
+        }
+
+        if (hookLaunched && !doChainBreak) // If the hook is currently attached to something, determine if the chain break process should begin.
         {
             doChainBreak = CheckChainBreak();
         }
 
-        if (doChainBreak)
+        if (doChainBreak) // Counts down to when the chain should break after the breaking threshhold has been reached.
         {
             chainBreakTimeTracker += Time.deltaTime;
         }
 
-        if(doChainBreak && chainBreakTimeTracker > chainBreakTime)
+        if (doChainBreak && chainBreakTimeTracker > chainBreakTime) // If the chainbreak process has started and the countdown finished, finally break the chain.
         {
             doChainBreak = false;
             chainBreakTimeTracker = 0;
             SwitchHookState();
         }
 
+        /* ### Inputs ### */
+
+        // Launch the hook when pressing left click.
         if (Input.GetMouseButtonDown(0))
         {
             if (!isHookBeingLaunched) // Don't run the SetGrapplePoint function if the player is currently trying to launch the hook
             {
                 if (SetGrapplePoint() && timeSinceUnhooked >= hookCooldown)
                 {
-                    // Between the time that the grapple point is set and the hook state is changed, there should be played an animation that delays the SwitchHookState function.
-                    // This delay should depend on a variable that determines the hook launch speed.
-                    // Essentially we want to emulate a projectile hook without actually using physics.
-
-                    // Solution: Make a bool that is set here instead of calling SwitchHookState().
-                    // The bool will be checked in an if-statement at the top of update, and update a timer that counts down until it then calls SwitchHookState from there.
-
-                    //SwitchHookState();
                     grapplingHook.transform.position = grapplePoint;
                     grapplingHook.transform.parent = hookLaunched ? null : transform;
                     isHookBeingLaunched = true;
                 }
             }
-            
         }
+
+        // Retract the hook when left click is released.
         if (Input.GetMouseButtonUp(0) && hookLaunched)
         {
             SwitchHookState();
@@ -114,15 +101,41 @@ public class GrapplingHook : MonoBehaviour
             hookLaunchDistanceTraveled = 0;
             isHookBeingLaunched = false;
         }
-        if (Input.GetMouseButton(1))
+
+        // Reel in the player when pressing right cick.
+        if (Input.GetMouseButtonDown(1))
         {
-            springDistance = Mathf.Clamp(springDistance - Time.deltaTime * reelingSpeed, 0.05f, maxDistance);
-            springJoint.distance = springDistance;
+            reelDirection = -1;
             isReeling = true;
         }
-        else
+        
+        if(Input.GetMouseButtonUp(1))
         {
-            isReeling = false;
+            reelDirection = 1;
+            isReeling = true;
+        }
+
+        if (isReeling)
+        {
+            if(reelDirection == -1)
+            {
+                springDistance = Mathf.Clamp(springDistance - Time.deltaTime * reelingSpeed, 0.05f, distanceWhenHooked);
+            }
+            else if(reelDirection == 1)
+            {
+                Debug.Log("B");
+                springDistance = Mathf.Clamp(Vector2.Distance(grapplePoint, transform.position), 0.05f, distanceWhenHooked);
+                springJoint.dampingRatio = 0;
+            }
+            springJoint.distance = springDistance;
+
+            if (springDistance <= 0.05f || springDistance >= distanceWhenHooked || hookLaunched == false)
+            {
+                Debug.Log("C");
+                isReeling = false;
+                reelDirection = 0;
+                springJoint.dampingRatio = originalDampingRatio;
+            }
         }
     }
 
@@ -152,6 +165,7 @@ public class GrapplingHook : MonoBehaviour
     {
         // Switch between launched and retracted states
         timeSinceUnhooked = 0;
+        distanceWhenHooked = Vector2.Distance(transform.position, grapplePoint);
         hookLaunched = !hookLaunched;
         springJoint.enabled = hookLaunched;
         springJoint.distance = springDistance;
@@ -178,6 +192,23 @@ public class GrapplingHook : MonoBehaviour
         else
         {
             return false;
+        }
+    }
+
+    private void ExtendHookChain()
+    {
+        hookLaunchDistanceTraveled += hookLaunchSpeed * Time.deltaTime;
+        if (Vector2.Distance(transform.position, grapplePoint) < hookLaunchDistanceTraveled)
+        {
+            isHookBeingLaunched = false;
+            hookLaunchDistanceTraveled = 0;
+            springDistance = Vector2.Distance(transform.position, grapplePoint);
+            SwitchHookState();
+        }
+        else if (hookLaunchDistanceTraveled > maxDistance) // If the hook has extended further than the maximum distance, the grapple has failed.
+        {
+            isHookBeingLaunched = false;
+            hookLaunchDistanceTraveled = 0;
         }
     }
 }

@@ -8,6 +8,7 @@ public class Lava : MonoBehaviour
     // If the player touches this trigger, they will die.
     // Whenever a platform is engulfed by this GameObject, it is destroyed.
     // This GameObject will slowly rise, chasing the player.
+    public float playerHealth;
 
     [Header("Variables")]
     [SerializeField] bool doDistanceBasedSpeed; // If true, the lava will speed up and slow down based on distance to the player. Min and max speed capped by numbers below.
@@ -29,21 +30,15 @@ public class Lava : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.layer == 6) // Layer 6 is the player layer
-        {
-            GameManager.playerIsDead = true;
-
-            deathScreen.SetActive(true);
-            scoreText.text = ((int)GameManager.playerMaxY).ToString();
-            float highScore = PlayerPrefs.GetFloat("Highscore");
-            highScore = highScore > GameManager.playerMaxY ? highScore : GameManager.playerMaxY;
-            highscoreText.text = ((int)highScore).ToString();
-            PlayerPrefs.SetFloat("Highscore", highScore);
-
-            return;
-        }
-
         platformsToDestroy.Add(collision.GetComponentInParent<Platform>());
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if(collision.gameObject.layer == 6) // 6 is player layer
+        {
+            playerHealth -= Time.deltaTime;
+        }
     }
 
     private void Update()
@@ -68,5 +63,24 @@ public class Lava : MonoBehaviour
                 i--;
             }
         }
+
+        if(playerHealth <= 0)
+        {
+            KillPlayer();
+        }
+    }
+
+    private void KillPlayer()
+    {
+        GameManager.playerIsDead = true;
+
+        deathScreen.SetActive(true);
+        scoreText.text = ((int)GameManager.playerMaxY).ToString();
+        float highScore = PlayerPrefs.GetFloat("Highscore");
+        highScore = highScore > GameManager.playerMaxY ? highScore : GameManager.playerMaxY;
+        highscoreText.text = ((int)highScore).ToString();
+        PlayerPrefs.SetFloat("Highscore", highScore);
+
+        return;
     }
 }
