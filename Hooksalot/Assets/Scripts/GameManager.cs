@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     public static Movement playerMovement;
     public static Rigidbody2D playerRB;
     public static GrapplingHook hook;
+    public static Health playerHealth;
 
     [SerializeField] bool debug;
 
@@ -19,6 +20,7 @@ public class GameManager : MonoBehaviour
         playerMovement = FindFirstObjectByType<Movement>();
         playerRB = playerMovement.GetComponent<Rigidbody2D>();
         hook = playerMovement.GetComponent<GrapplingHook>();
+        playerHealth = playerMovement.GetComponent<Health>();
 
         halfScreenSize.y = Camera.main.orthographicSize;
         // Given an aspect ratio 9:16, we know that 9 / 16 = x / y
