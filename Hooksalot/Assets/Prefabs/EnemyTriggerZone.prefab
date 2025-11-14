@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1449590787387078679}
   - component: {fileID: 3962697490955935646}
   - component: {fileID: 1728693934945058065}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: EnemyTriggerZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e74e25fc635281143bd23815b5cecb02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyMovement
-  EnemySpeed: 10
+  EnemySpeed: 2
   playerTransform: {fileID: 878972344969134583, guid: e4e59fd7d46a0ef4f92419a285c997db, type: 3}
 --- !u!1 &5286483080043496576
 GameObject:
@@ -106,7 +106,7 @@ GameObject:
   - component: {fileID: 5288328758212024404}
   - component: {fileID: 8949702975978931327}
   - component: {fileID: 4474668754246057833}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -234,4 +234,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fa941064af16ea47ae21bc98a733d3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SuicideEnemy
-  ExplosionSize: 20
+  ExplosionSize: 15

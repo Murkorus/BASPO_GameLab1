@@ -46,6 +46,7 @@ public class Health : MonoBehaviour
     private void KillPlayer()
     {
         GameManager.playerIsDead = true;
+        FindFirstObjectByType<ScoreManager>().CalculateAllScores();
         SceneManager.LoadScene("DeathScreen");
     }
 }

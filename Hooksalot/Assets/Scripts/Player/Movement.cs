@@ -20,6 +20,12 @@ public class Movement : MonoBehaviour
     [SerializeField] bool canJump;
     [SerializeField] float jumpForce;
 
+    [Header("Debug")]
+    public bool isHookLaunched;
+    public bool isCurrentlyWalking;
+    public bool isCurrentlyReeling;
+    public bool isCurrentlyGrounded;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -31,10 +37,11 @@ public class Movement : MonoBehaviour
 
     private void Update()
     {
-        if (GameManager.playerIsDead)
-        {
-            return;
-        }
+        // Debug
+        isHookLaunched = hookScript.hookLaunched;
+        isCurrentlyWalking = isWalking;
+        isCurrentlyReeling = hookScript.isReeling;
+        isCurrentlyGrounded = IsGrounded();
 
         isGrounded = IsGrounded();
 

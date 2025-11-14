@@ -3,7 +3,9 @@ using TMPro;
 
 public class ScoreManager : MonoBehaviour
 {
+    public static int platformsBroken;
     public static float platformBreakScore;
+    public static int enemiesKilled;
     public static float enemyKillScore;
     public static float speedScore;
     public static float timeScore;
@@ -15,6 +17,7 @@ public class ScoreManager : MonoBehaviour
     [SerializeField] float minimumTimeForScore;
     [Range(1, 2)] [SerializeField] float timeScorePower; // 1 means the time score follows a square root curve, 2 means it follows a linear function.
     [SerializeField] float timeSpeed; // How fast time go for the purposes of calculating score? Determines how many seconds pass per real second.
+    public float scoreFromBreakingPlatform; // How much score should the player be rewarded for breaking a platform?
 
     [Header("Multipliers")]
     [SerializeField] float platformBreakMult;
@@ -34,14 +37,18 @@ public class ScoreManager : MonoBehaviour
             return;
         }
 
-        scoreText.text = ((int)TotalScore()).ToString();
-
         if (Time.timeSinceLevelLoad > corruptionScript.startTimeDelay && GameManager.playerMaxY >= corruptionScript.startHeightDelay)
         {
             timeTaken += Time.deltaTime;
         }
-        
+        CalculateAllScores();
+        scoreText.text = ((int)TotalScore()).ToString();
+    }
+
+    public void CalculateAllScores()
+    {
         timeScore = timeTakenMult * Mathf.Sqrt(Mathf.Clamp(Mathf.Pow((timeTaken - minimumTimeForScore) * timeSpeed, timeScorePower), 0, Mathf.Infinity));
+        platformBreakScore = platformsBroken * scoreFromBreakingPlatform * platformBreakMult;
         heightScore = Mathf.Clamp(GameManager.playerMaxY * maxHeightMult, 0, Mathf.Infinity);
     }
 
@@ -52,10 +59,40 @@ public class ScoreManager : MonoBehaviour
 
     public static float HighScore()
     {
-        float highScore = PlayerPrefs.GetFloat("Highscore");
+        float highscore = PlayerPrefs.GetFloat("Highscore");
         float totalScore = TotalScore();
-        highScore = highScore > totalScore ? highScore : totalScore;
-        PlayerPrefs.SetFloat("Highscore", highScore);
-        return highScore;
+        highscore = highscore > totalScore ? highscore : totalScore;
+        PlayerPrefs.SetFloat("Highscore", highscore);
+        return highscore;
+    }
+
+    public static string ScoreFactors()
+    {
+        int minutes = Mathf.FloorToInt(timeTaken / 60);
+        int seconds = Mathf.FloorToInt(timeTaken - minutes * 60);
+        string time = string.Format("{0:00}:{1:00}", minutes, seconds);
+
+        string scoreFactors =   $"{(int)GameManager.playerMaxY}\n" +
+                                $"{(int)heightScore}\n" +
+                                $"{time}\n" +
+                                $"{(int)timeScore}\n" +
+                                $"{platformsBroken}\n" +
+                                $"{(int)platformBreakScore}\n" +
+                                $"{enemiesKilled}\n" +
+                                $"{(int)enemyKillScore}";
+        return scoreFactors;
+    }
+
+    public static string HighscoreFactors()
+    {
+        float highscore = PlayerPrefs.GetFloat("Highscore");
+        string highscoreFactors = PlayerPrefs.GetString("HighscoreFactors");
+        if (highscoreFactors == string.Empty)
+        {
+            highscoreFactors = $"0\n0\n00:00\n0\n0\n0\n0\n0";
+        }
+        highscoreFactors = highscore > TotalScore() ? highscoreFactors : ScoreFactors();
+        PlayerPrefs.SetString("HighscoreFactors", highscoreFactors);
+        return highscoreFactors;
     }
 }

@@ -4,12 +4,16 @@ using UnityEngine;
 public class DeathScreen : MonoBehaviour
 {
     [Header("References")]
-    public TMP_Text scoreText;
-    public TMP_Text highScoreText;
+    public TMP_Text score;
+    public TMP_Text highscore;
+    public TMP_Text scoreFactors;
+    public TMP_Text highscoreFactors;
 
     private void Awake()
     {
-        scoreText.text = ((int)ScoreManager.TotalScore()).ToString();
-        highScoreText.text = ((int)ScoreManager.HighScore()).ToString();
+        score.text = ((int)ScoreManager.TotalScore()).ToString();
+        highscore.text = ((int)ScoreManager.HighScore()).ToString();
+        scoreFactors.text = ScoreManager.ScoreFactors();
+        highscoreFactors.text = ScoreManager.HighscoreFactors();
     }
 }

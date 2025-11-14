@@ -85,6 +85,11 @@ public class Platform : MonoBehaviour
         outline.enabled = !outline.enabled;
         platformCollider.enabled = !platformCollider.enabled;
         minimapMarker.enabled = !minimapMarker.enabled;
+
+        if (hasBeenDestroyed)
+        {
+            ScoreManager.platformsBroken++;
+        }
     }
 
     public void SimulatePlayerImpact()

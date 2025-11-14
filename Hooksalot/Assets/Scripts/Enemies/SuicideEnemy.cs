@@ -21,6 +21,6 @@ public class SuicideEnemy : MonoBehaviour
         
         rb.AddForce(direction * ExplosionSize, ForceMode2D.Impulse);
 
-        Destroy(gameObject);
+        Destroy(transform.parent.gameObject);
     }
 }
