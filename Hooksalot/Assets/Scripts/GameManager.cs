@@ -4,7 +4,6 @@ public class GameManager : MonoBehaviour
 {
     public static bool debugMode;
     public static bool playerIsDead;
-    public static float score;
     public static float playerMaxY;
     public static Vector2 halfScreenSize;
 
@@ -17,6 +16,27 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
+        ResetStaticVariables();
+    }
+
+    private void Update()
+    {
+        debugMode = debug;
+        playerMaxY = playerRB.transform.position.y > playerMaxY ? playerRB.transform.position.y : playerMaxY;
+    }
+
+    private void ResetStaticVariables()
+    {
+        playerIsDead = false;
+        playerMaxY = 0;
+
+        ScoreManager.platformBreakScore = 0;
+        ScoreManager.enemyKillScore = 0;
+        ScoreManager.speedScore = 0;
+        ScoreManager.timeScore = 0;
+        ScoreManager.timeTaken = 0;
+        ScoreManager.heightScore = 0;
+
         playerMovement = FindFirstObjectByType<Movement>();
         playerRB = playerMovement.GetComponent<Rigidbody2D>();
         hook = playerMovement.GetComponent<GrapplingHook>();
@@ -28,12 +48,5 @@ public class GameManager : MonoBehaviour
         // Thus, x = 9 / 16 * orthographicSize * 2
         halfScreenSize.x = Camera.main.aspect * halfScreenSize.y;
         Debug.Log($"Screen dimensions are: <color=green>{halfScreenSize.x * 2}x{halfScreenSize.y * 2}</color>.");
-    }
-
-    private void Update()
-    {
-        debugMode = debug;
-
-        playerMaxY = playerRB.transform.position.y > playerMaxY ? playerRB.transform.position.y : playerMaxY;
     }
 }

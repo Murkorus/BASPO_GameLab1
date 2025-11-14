@@ -15,8 +15,13 @@ public class Lava : MonoBehaviour
     [SerializeField] float maxSpeed;
     [SerializeField] float distanceBasedSpeedScale; // How fast should the lava accelerate? Lower value = faster. This number is the base in a logarithmic function.
     [SerializeField] float speed;
-    [SerializeField] float startDelay;
+    public float startTimeDelay;
+    public float startHeightDelay;
     [SerializeField] float destructionBuffer; // How far below the surface of the lava should the top of a platform be before it gets destroyed?
+    [SerializeField] float buoyancyForce; // How much force is applied to the player to keep them buoyant?
+    [SerializeField] float floatingLevel; // How far below the surface of the corruption should the player be floating? Negative means below the surface.
+    [SerializeField] float maxBuoyancyForce; // At what velocity should the player stop being pulled upwards?
+    [SerializeField] float instaKillDepth; // How far below the surface should the player be before they are just killed instantly as a fallback in case they are going too fast?
 
     public List<Platform> platformsToDestroy = new List<Platform>();
 
@@ -37,12 +42,26 @@ public class Lava : MonoBehaviour
         {
             GameManager.playerHealth.hp -= Time.deltaTime;
             GameManager.playerHealth.regenTimer = 0;
+            float topOfCorruption = transform.position.y + transform.localScale.y * 0.5f + floatingLevel;
+            if (GameManager.playerRB.transform.position.y < topOfCorruption)
+            {
+                // If the player is below the top of the corruption.
+                if(GameManager.playerRB.linearVelocityY < maxBuoyancyForce)
+                {
+                    GameManager.playerRB.AddForce((topOfCorruption - GameManager.playerRB.transform.position.y) * buoyancyForce * Time.deltaTime * Vector2.up);
+                }
+            }
+
+            if(GameManager.playerRB.transform.position.y < topOfCorruption + instaKillDepth)
+            {
+                GameManager.playerHealth.hp = 0;
+            }
         }
     }
 
     private void Update()
     {
-        if (Time.timeSinceLevelLoad > startDelay)
+        if (Time.timeSinceLevelLoad > startTimeDelay && GameManager.playerMaxY >= startHeightDelay)
         {
             // Move upwards
             float distanceBasedSpeedMod = Mathf.Clamp(doDistanceBasedSpeed ? Mathf.Log(Vector2.Distance(transform.position + Vector3.up * transform.localScale.y * 0.5f, GameManager.playerRB.transform.position), distanceBasedSpeedScale) : 1, minSpeed, maxSpeed);

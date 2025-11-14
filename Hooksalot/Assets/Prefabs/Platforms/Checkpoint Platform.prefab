@@ -101,8 +101,8 @@ GameObject:
   - component: {fileID: 2888583560629558324}
   - component: {fileID: 1127048592170105967}
   - component: {fileID: 4508264053279101855}
-  m_Layer: 7
-  m_Name: Marble Platform
+  m_Layer: 0
+  m_Name: Checkpoint Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -139,8 +139,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Platform
   durability: Infinity
-  platformScale: {x: 0, y: 0}
-  onlyCollideFromTop: 0
+  platformScale: {x: 20, y: 0.5}
+  onlyCollideFromTop: 1
   respawnTime: 10
   slowDownMultiplier: 0.2
   platformCollider: {fileID: 4508264053279101855}

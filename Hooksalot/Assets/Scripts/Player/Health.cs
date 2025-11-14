@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Health : MonoBehaviour
 {
@@ -13,9 +14,6 @@ public class Health : MonoBehaviour
     private float vignetteStartingScale;
 
     [Header("References")]
-    [SerializeField] GameObject deathScreen;
-    [SerializeField] TMP_Text scoreText;
-    [SerializeField] TMP_Text highscoreText;
     [SerializeField] GameObject vignette;
     [SerializeField] GameObject corruptionVeins;
 
@@ -48,12 +46,6 @@ public class Health : MonoBehaviour
     private void KillPlayer()
     {
         GameManager.playerIsDead = true;
-
-        deathScreen.SetActive(true);
-        scoreText.text = ((int)GameManager.playerMaxY).ToString();
-        float highScore = PlayerPrefs.GetFloat("Highscore");
-        highScore = highScore > GameManager.playerMaxY ? highScore : GameManager.playerMaxY;
-        highscoreText.text = ((int)highScore).ToString();
-        PlayerPrefs.SetFloat("Highscore", highScore);
+        SceneManager.LoadScene("DeathScreen");
     }
 }
