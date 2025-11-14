@@ -43,11 +43,6 @@ public class GrapplingHook : MonoBehaviour
     // Perhaps make a new function with similar functionality to the SwitchHookState() function but for the in-between part where the hook is being launched.
     private void Update()
     {
-        if (GameManager.playerIsDead) // Prevent input if the player has died (to avoid post-mortem shenanigans)
-        {
-            return;
-        }
-
         if (!hookLaunched) // If the hook is not currently attached to something, count down for the next time the player can launch the hook.
         {
             timeSinceUnhooked += Time.deltaTime;
@@ -103,7 +98,7 @@ public class GrapplingHook : MonoBehaviour
         }
 
         // Reel in the player when pressing right cick.
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButton(1))
         {
             reelDirection = -1;
             isReeling = true;
