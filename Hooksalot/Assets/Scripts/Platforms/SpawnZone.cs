@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class SpawnZone : MonoBehaviour
 {
@@ -35,8 +36,8 @@ public class SpawnZone : MonoBehaviour
     [SerializeField] float myPositionVariance;
     [SerializeField] float myXScaleMultiplier;
     [SerializeField] float myYScaleMultiplier;
+    [SerializeField] GameObject enemy;
     [Range(0, 1)] [SerializeField] float myPowerupSpawnChance;
-    [Range(0, 1)][SerializeField] float myEnemySpawnChance;
     [Range(1, 5)] public int maxPlatformsPerY; // How many platforms can at most spawn on the same y-level?
 
     [Header("Debugging")]
@@ -159,13 +160,13 @@ public class SpawnZone : MonoBehaviour
             {
                 SpawnPowerup();
             }
-
-            // Spawn a enemy
-            if(Random.Range(0f, 1f) <= (useDefaultValues ? sm.defaultEnemySpawnChance : myEnemySpawnChance))
-            {
-                SpawnEnemy();
-            }
         }
+    }
+
+    public void SpawnEnemy()
+    {
+        Vector2 position = new Vector2(Random.Range(bottomLeftCorner.x, topRightCorner.x), Random.Range(bottomLeftCorner.y, topRightCorner.y));
+       GameObject temp = Instantiate(enemy, position, Quaternion.identity);
     }
 
     public void SpawnPowerup()
@@ -206,49 +207,6 @@ public class SpawnZone : MonoBehaviour
 
                 // Spawn the powerup
                 Instantiate(powerupSpawnOptions[0].spawnableObject, spawnPoint, Quaternion.identity, sm.powerupParent);
-            }
-
-        }
-    }
-
-    public void SpawnEnemy()
-    {
-        // Take advantage of the fact that platforms are already guaranteed to be somewhat spaced apart.
-        // We can spawn enemies based on the position of the last spawned platform.
-
-        // We could also, instead of spawning the enemy on top of a platform, send a circlecast downwards, and spawn the powerup somewhere in between the bottom of the platform and the place the circlecast hit.
-        // This would make the enemies spawn mid-air, but might not always work if platforms are too densely packed.
-
-        // First, decide between if the enemy should be spawned above or below the platform.
-        if(Random.Range(0f, 1f) <= sm.enemySpawningBehaviour)
-        {
-            // Spawn above
-            Vector2 spawnpoint = (Vector2)lastSpawnedPlatform.transform.position + (lastSpawnedPlatform.platformScale.y * 0.5f + 1) * Vector2.up;
-            Instantiate(enemySpawnOptions[0].spawnableObject, spawnpoint, Quaternion.identity, sm.enemyParent);
-        }
-        else
-        {
-            // Spawn below
-            // Only collide with default and grappleable layers.
-            // We take the binary values of the masks we want to collide with, and add them together.
-            LayerMask onlyPlatformMask = LayerMask.GetMask("Default") + LayerMask.GetMask("Grappleable");
-            Vector2 circleCastOrigin = (Vector2)lastSpawnedPlatform.transform.position - (lastSpawnedPlatform.platformScale.y * 0.5f + enemySpawnOptions[0].spawnableObject.transform.localScale.y * 0.5f + 1) * Vector2.up + Random.Range(-lastSpawnedPlatform.transform.localScale.x, lastSpawnedPlatform.transform.localScale.x) * Vector2.right;
-            RaycastHit2D hit = Physics2D.CircleCast(circleCastOrigin, 1, -Vector2.up, Mathf.Infinity, onlyPlatformMask);
-            if (GameManager.debugMode)
-            {
-                Debug.DrawLine(circleCastOrigin, hit.point, Color.yellow, 60);
-            }
-            // Since the circlecast can hit the default layer, and the floor is set to the default layer, hit should in theory always be true.
-            if (hit)
-            {
-                // Find the vector between the hit point and the start point.
-                Vector2 belowPlatformVector = new Vector2(circleCastOrigin.x, hit.point.y) - circleCastOrigin;
-
-                // Pick a random spot on that vector.
-                Vector2 spawnPoint = circleCastOrigin + belowPlatformVector * Random.Range(0.2f, 0.8f);
-
-                // Spawn the enemy
-                Instantiate(enemySpawnOptions[0].spawnableObject, spawnPoint, Quaternion.identity, sm.enemyParent);
             }
 
         }

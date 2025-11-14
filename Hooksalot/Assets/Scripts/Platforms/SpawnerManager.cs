@@ -38,14 +38,16 @@ public class SpawnerManager : MonoBehaviour
     [Range(0, 1)] public float defaultPowerupSpawnChance; // The chance that a powerup will spawn on top of any spawned platform.
     [Range(0, 1)] public float powerupSpawningBehaviour; // The chance that when a powerup spawns, it will spawn ontop of a platform rather than below it. This does not affect the chance to spawn a powerup, merely how and where they spawn.
     [Range(0, 1)] public float defaultEnemySpawnChance;
-    [Range(0, 1)] public float enemySpawningBehaviour;
+    
 
     [Header("Enemy Variables")]
     [SerializeField] float timeBetweenWaves;
     [SerializeField] Vector2 waveSizeMinMax;
+    [SerializeField] float EnemySpawnInterval;
 
     private float spawnNextCheckpointAt;
     private float spawnNextPlatformAt;
+    private float spawnNextEnemyAt;
 
     private void Awake()
     {
@@ -97,8 +99,10 @@ public class SpawnerManager : MonoBehaviour
         for(int i = 0; i < activeZones.Count; i++)
         {
             activeZones[i].SpawnPlatform();
+            activeZones[i].SpawnEnemy();
         }
     }
+
 
     private void UpdateZoneStates()
     {

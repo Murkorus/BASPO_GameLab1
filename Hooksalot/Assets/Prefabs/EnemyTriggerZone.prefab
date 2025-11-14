@@ -47,10 +47,10 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 959
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -93,7 +93,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyMovement
   EnemySpeed: 10
-  playerTransform: {fileID: 0}
+  playerTransform: {fileID: 878972344969134583, guid: e4e59fd7d46a0ef4f92419a285c997db, type: 3}
 --- !u!1 &5286483080043496576
 GameObject:
   m_ObjectHideFlags: 0
@@ -174,7 +174,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 340
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -199,10 +199,10 @@ CircleCollider2D:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 959
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -234,4 +234,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fa941064af16ea47ae21bc98a733d3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SuicideEnemy
-  Explosion: 15
+  ExplosionSize: 20

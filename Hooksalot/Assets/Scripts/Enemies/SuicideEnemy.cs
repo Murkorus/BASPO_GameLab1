@@ -6,8 +6,9 @@ public class SuicideEnemy : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Rigidbody2D rb = GameManager.playerRB;
+            Rigidbody2D rb = GameManager.playerRB;
 
+        
         GrapplingHook hook = GameManager.hook;
         if (hook.hookLaunched) 
         {
