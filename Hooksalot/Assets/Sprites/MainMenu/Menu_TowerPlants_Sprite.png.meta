@@ -1,0 +1,520 @@
+fileFormatVersion: 2
+guid: 126d0c9b9b14d7f459e7d5b1329b579b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5943955204253842923
+    second: Menu_TowerPlants_Sprite_0
+  - first:
+      213: -8899773177307379591
+    second: Menu_TowerPlants_Sprite_1
+  - first:
+      213: 6992642689911263873
+    second: Menu_TowerPlants_Sprite_2
+  - first:
+      213: -124389494756543736
+    second: Menu_TowerPlants_Sprite_3
+  - first:
+      213: -7636422453539668914
+    second: Menu_TowerPlants_Sprite_4
+  - first:
+      213: -6230622661652535811
+    second: Menu_TowerPlants_Sprite_5
+  - first:
+      213: 6630214524085528571
+    second: Menu_TowerPlants_Sprite_6
+  - first:
+      213: -8708804039010303995
+    second: Menu_TowerPlants_Sprite_7
+  - first:
+      213: -2847382590987887727
+    second: Menu_TowerPlants_Sprite_8
+  - first:
+      213: 1261504966521154397
+    second: Menu_TowerPlants_Sprite_9
+  - first:
+      213: -5100323356896869987
+    second: Menu_TowerPlants_Sprite_10
+  - first:
+      213: 8883271220434452480
+    second: Menu_TowerPlants_Sprite_11
+  - first:
+      213: -8863350151295529756
+    second: Menu_TowerPlants_Sprite_12
+  - first:
+      213: 7917023166932471636
+    second: Menu_TowerPlants_Sprite_13
+  - first:
+      213: -432331104634876380
+    second: Menu_TowerPlants_Sprite_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 135
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Menu_TowerPlants_Sprite_0
+      rect:
+        serializedVersion: 2
+        x: 3067
+        y: 1862
+        width: 151
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5128d91fb34d28da0800000000000000
+      internalID: -5943955204253842923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu_TowerPlants_Sprite_1
+      rect:
+        serializedVersion: 2
+        x: 3497
+        y: 1911
+        width: 79
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9784b01c277ad7480800000000000000
+      internalID: -8899773177307379591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu_TowerPlants_Sprite_2
+      rect:
+        serializedVersion: 2
+        x: 3444
+        y: 1679
+        width: 108
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18294655a7bda0160800000000000000
+      internalID: 6992642689911263873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu_TowerPlants_Sprite_3
+      rect:
+        serializedVersion: 2
+        x: 3074
+        y: 1466
+        width: 118
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 803fe3fd964164ef0800000000000000
+      internalID: -124389494756543736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu_TowerPlants_Sprite_4
+      rect:
+        serializedVersion: 2
+        x: 3326
+        y: 1339
+        width: 70
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4c73fdec3af50690800000000000000
+      internalID: -7636422453539668914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu_TowerPlants_Sprite_5
+      rect:
+        serializedVersion: 2
+        x: 3075
+        y: 1194
+        width: 240
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df5a3b253b16889a0800000000000000
+      internalID: -6230622661652535811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu_TowerPlants_Sprite_6
+      rect:
+        serializedVersion: 2
+        x: 3332
+        y: 1256
+        width: 14
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf7e0c43bf0430c50800000000000000
+      internalID: 6630214524085528571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu_TowerPlants_Sprite_7
+      rect:
+        serializedVersion: 2
+        x: 3530
+        y: 1248
+        width: 106
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 500cd442edc142780800000000000000
+      internalID: -8708804039010303995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu_TowerPlants_Sprite_8
+      rect:
+        serializedVersion: 2
+        x: 3071
+        y: 1028
+        width: 132
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19b198c9e901c78d0800000000000000
+      internalID: -2847382590987887727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu_TowerPlants_Sprite_9
+      rect:
+        serializedVersion: 2
+        x: 3289
+        y: 1001
+        width: 91
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5b62e35514c18110800000000000000
+      internalID: 1261504966521154397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu_TowerPlants_Sprite_10
+      rect:
+        serializedVersion: 2
+        x: 3486
+        y: 1013
+        width: 155
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d91c888fde20839b0800000000000000
+      internalID: -5100323356896869987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu_TowerPlants_Sprite_11
+      rect:
+        serializedVersion: 2
+        x: 3069
+        y: 808
+        width: 66
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00042710c18b74b70800000000000000
+      internalID: 8883271220434452480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu_TowerPlants_Sprite_12
+      rect:
+        serializedVersion: 2
+        x: 3164
+        y: 804
+        width: 64
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ec00285ffd0ff480800000000000000
+      internalID: -8863350151295529756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu_TowerPlants_Sprite_13
+      rect:
+        serializedVersion: 2
+        x: 3388
+        y: 763
+        width: 97
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45f4c87cf9aeedd60800000000000000
+      internalID: 7917023166932471636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menu_TowerPlants_Sprite_14
+      rect:
+        serializedVersion: 2
+        x: 3548
+        y: 778
+        width: 93
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42ec2e2a62d000af0800000000000000
+      internalID: -432331104634876380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Menu_TowerPlants_Sprite_0: -5943955204253842923
+      Menu_TowerPlants_Sprite_1: -8899773177307379591
+      Menu_TowerPlants_Sprite_10: -5100323356896869987
+      Menu_TowerPlants_Sprite_11: 8883271220434452480
+      Menu_TowerPlants_Sprite_12: -8863350151295529756
+      Menu_TowerPlants_Sprite_13: 7917023166932471636
+      Menu_TowerPlants_Sprite_14: -432331104634876380
+      Menu_TowerPlants_Sprite_2: 6992642689911263873
+      Menu_TowerPlants_Sprite_3: -124389494756543736
+      Menu_TowerPlants_Sprite_4: -7636422453539668914
+      Menu_TowerPlants_Sprite_5: -6230622661652535811
+      Menu_TowerPlants_Sprite_6: 6630214524085528571
+      Menu_TowerPlants_Sprite_7: -8708804039010303995
+      Menu_TowerPlants_Sprite_8: -2847382590987887727
+      Menu_TowerPlants_Sprite_9: 1261504966521154397
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
