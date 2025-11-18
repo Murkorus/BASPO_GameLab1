@@ -3,7 +3,9 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
-    public float EnemySpeed = 10f;
+    public float enemySpeed = 10f;
+    public float maxChaseDistance;
+    public float maximumSpeed;
     public Transform playerTransform;
     private bool isChasing = false;
     
@@ -16,11 +18,17 @@ public class EnemyMovement : MonoBehaviour
     
     void Update()
     {
+        Vector2 direction = GameManager.playerRB.transform.position - transform.position;
+        if (direction.magnitude > maxChaseDistance)
+        {
+            isChasing = false;
+            transform.up = Vector2.up;
+        }
        
         if (isChasing == true)
         {
-            Vector2 direction = (GameManager.playerRB.transform.position - transform.position);
-            transform.position += (Vector3)(direction * EnemySpeed * Time.deltaTime);
+            transform.up = -direction;
+            transform.position += (Vector3)Vector2.ClampMagnitude(direction * enemySpeed, maximumSpeed) * Time.deltaTime;
         }
     }
 }

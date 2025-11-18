@@ -165,8 +165,8 @@ public class SpawnZone : MonoBehaviour
 
     public void SpawnEnemy()
     {
-        Vector2 position = new Vector2(Random.Range(bottomLeftCorner.x, topRightCorner.x), Random.Range(bottomLeftCorner.y, topRightCorner.y));
-       GameObject temp = Instantiate(enemy, position, Quaternion.identity);
+        Vector2 position = new Vector2(Random.Range(bottomLeftCorner.x, topRightCorner.x), sm.spawnNextEnemyAt + sm.enemySpawnDistance + Random.Range(-sm.enemySpawnHeightVariance, sm.enemySpawnHeightVariance));
+        GameObject temp = Instantiate(enemy, position, Quaternion.identity);
     }
 
     public void SpawnPowerup()

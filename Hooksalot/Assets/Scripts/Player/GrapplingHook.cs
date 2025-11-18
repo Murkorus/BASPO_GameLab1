@@ -43,6 +43,15 @@ public class GrapplingHook : MonoBehaviour
     // Perhaps make a new function with similar functionality to the SwitchHookState() function but for the in-between part where the hook is being launched.
     private void Update()
     {
+        /*if(grappledObject != null)
+        {
+            if (grappledObject.layer == LayerMask.NameToLayer("Enemy") && hookLaunched)
+            {
+                SetGrapplePoint();
+                springJoint.distance = springDistance;
+            }
+        }*/
+        
         if (!hookLaunched) // If the hook is not currently attached to something, count down for the next time the player can launch the hook.
         {
             timeSinceUnhooked += Time.deltaTime;

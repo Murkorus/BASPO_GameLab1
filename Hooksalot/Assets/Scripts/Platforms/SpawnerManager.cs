@@ -30,6 +30,8 @@ public class SpawnerManager : MonoBehaviour
     public float spawningDistance; // How far above the player should platforms be spawning inside a continous spawn zone?
     public float playerZoneDistance; // How far above the player should spawning be disallowed? Note: If set to values lower than around half the size of the camera on the y-axis, spawning will happen on-screen.
     //[SerializeField] int batchSize; // How many platforms should be spawned per 'batch'?
+    public float enemySpawnDistance; // How far above the player should enemies be spawned?
+    public float enemySpawnHeightVariance; // The variance in the y level of enemies being spawned. We should keep this to less than half of the enemy spawn interval.
     public float defaultEdgeDistance; // What is the minimum distance between the edges of any two platforms?
     public float defaultScaleVariance; // What is the minimum and maxium variance in platform scale? Setting this to 0 means every platform is the same size.
     public float defaultPositionVariance; // What is the minimum and maximum variance in the distance between platforms? Setting this to 0 means every platform will be equally far apart.
@@ -43,11 +45,11 @@ public class SpawnerManager : MonoBehaviour
     [Header("Enemy Variables")]
     [SerializeField] float timeBetweenWaves;
     [SerializeField] Vector2 waveSizeMinMax;
-    [SerializeField] float EnemySpawnInterval;
+    [SerializeField] float enemySpawnInterval;
 
     private float spawnNextCheckpointAt;
     private float spawnNextPlatformAt;
-    private float spawnNextEnemyAt;
+    [HideInInspector] public float spawnNextEnemyAt;
 
     private void Awake()
     {
@@ -86,6 +88,13 @@ public class SpawnerManager : MonoBehaviour
             Instantiate(checkPointPrefab, Vector3.up * spawnNextCheckpointAt, Quaternion.identity);
             spawnNextCheckpointAt += checkPointInterval;
         }
+
+        if (GameManager.playerMaxY + playerZoneDistance + spawningDistance >= spawnNextEnemyAt)
+        {
+            Debug.Log("This runs!!!");
+            SpawnEnemies();
+            spawnNextEnemyAt += enemySpawnInterval;
+        }
     }
     private void SpawnPlatforms()
     {
@@ -99,10 +108,17 @@ public class SpawnerManager : MonoBehaviour
         for(int i = 0; i < activeZones.Count; i++)
         {
             activeZones[i].SpawnPlatform();
-            activeZones[i].SpawnEnemy();
         }
     }
 
+    private void SpawnEnemies()
+    {
+        UpdateZoneStates();
+        for (int i = 0; i < activeZones.Count; i++)
+        {
+            activeZones[i].SpawnEnemy();
+        }
+    }
 
     private void UpdateZoneStates()
     {
