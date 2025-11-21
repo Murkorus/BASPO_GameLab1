@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{0c485993-dfb8-4f4e-8101-ec7d93d89bb8}">
+		<property name="assetPath">
+			<value>Hooksalot Melody 3.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>35.427074829931975</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{206eedca-f08b-4202-a481-95dc0f711691}</destination>
+		</relationship>
+	</object>
+</objects>

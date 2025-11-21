@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{40942fc2-dcbb-4fae-8877-504ba9bcf559}">
+		<property name="assetPath">
+			<value>Loop 3 Cut Tail.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>8</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{206eedca-f08b-4202-a481-95dc0f711691}</destination>
+		</relationship>
+	</object>
+</objects>
