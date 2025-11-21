@@ -5025,9 +5025,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1993386273}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a6bf91a2692d6a4a89c293201af6354, type: 3}
+  m_Script: {fileID: 11500000, guid: 91d28d6568ab4124687c916fbf5642ed, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AudioManager
+  m_EditorClassIdentifier: Assembly-CSharp::GameplayMusicManager
+  gameplayMusicEvent:
+    Guid:
+      Data1: -2036702823
+      Data2: 1310942974
+      Data3: 643365540
+      Data4: -890183275
+    Path: event:/Adaptive
+  player: {fileID: 878972344973667809}
+  maxHeight: 1000
 --- !u!1 &2033344713
 GameObject:
   m_ObjectHideFlags: 0

@@ -521,6 +521,57 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 810921759}
   m_CullTransparentMesh: 1
+--- !u!1 &1010219940
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1010219942}
+  - component: {fileID: 1010219941}
+  m_Layer: 0
+  m_Name: MenuMusicManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1010219941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1010219940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f58a70c701ef6f4fb6239554b35d067, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MenuMusic
+  menuMusicEvent:
+    Guid:
+      Data1: 486258423
+      Data2: 1321478342
+      Data3: -1733073749
+      Data4: -522689678
+    Path: event:/Main Menu
+--- !u!4 &1010219942
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1010219940}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 50.78686, y: 152.3214, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1162525102
 GameObject:
   m_ObjectHideFlags: 0
@@ -761,57 +812,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1637427305}
   m_CullTransparentMesh: 1
---- !u!1 &1729689589
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1729689591}
-  - component: {fileID: 1729689590}
-  m_Layer: 0
-  m_Name: MenuMusicManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1729689590
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1729689589}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f58a70c701ef6f4fb6239554b35d067, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MenuMusicManager
-  menuMusicEvent:
-    Guid:
-      Data1: 486258423
-      Data2: 1321478342
-      Data3: -1733073749
-      Data4: -522689678
-    Path: event:/Main Menu
---- !u!4 &1729689591
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1729689589}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 50.78686, y: 152.3214, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1738426213
 GameObject:
   m_ObjectHideFlags: 0
@@ -1222,4 +1222,4 @@ SceneRoots:
   - {fileID: 1162525106}
   - {fileID: 441682528}
   - {fileID: 561912930}
-  - {fileID: 1729689591}
+  - {fileID: 1010219942}
