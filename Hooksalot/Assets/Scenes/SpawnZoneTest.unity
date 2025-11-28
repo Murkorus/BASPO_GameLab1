@@ -5848,6 +5848,13 @@ MonoBehaviour:
       Data3: 1526470299
       Data4: -1715955784
     Path: event:/HookAttach
+  reelSFX:
+    Guid:
+      Data1: 1770118837
+      Data2: 1127331170
+      Data3: -1947770480
+      Data4: -100379761
+    Path: event:/Reel
   springDistance: 0
   hookLaunched: 0
   isReeling: 0
