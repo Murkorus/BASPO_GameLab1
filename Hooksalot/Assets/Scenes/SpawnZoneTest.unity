@@ -5843,11 +5843,11 @@ MonoBehaviour:
     Path: event:/HookThrow
   hookAttachSFX:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -2010376697
+      Data2: 1154149302
+      Data3: 1526470299
+      Data4: -1715955784
+    Path: event:/HookAttach
   springDistance: 0
   hookLaunched: 0
   isReeling: 0
