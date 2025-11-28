@@ -4778,6 +4778,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1898289559}
   - component: {fileID: 1898289560}
+  - component: {fileID: 1898289561}
   m_Layer: 0
   m_Name: Audio
   m_TagString: Untagged
@@ -4821,6 +4822,39 @@ MonoBehaviour:
     Path: event:/Adaptive
   player: {fileID: 878972344973667809}
   maxHeight: 1000
+--- !u!114 &1898289561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1898289558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92fbf21e317d24948a0cdcb99ad52ac6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SFXManager
+  hookLaunchSFX:
+    Guid:
+      Data1: 1628037423
+      Data2: 1337461094
+      Data3: 1243076499
+      Data4: -1278483886
+    Path: event:/HookThrow
+  hookAttachSFX:
+    Guid:
+      Data1: -2010376697
+      Data2: 1154149302
+      Data3: 1526470299
+      Data4: -1715955784
+    Path: event:/HookAttach
+  reelLoopSFX:
+    Guid:
+      Data1: 1770118837
+      Data2: 1127331170
+      Data3: -1947770480
+      Data4: -100379761
+    Path: event:/Reel
 --- !u!1 &1934819996
 GameObject:
   m_ObjectHideFlags: 0
@@ -5834,27 +5868,6 @@ MonoBehaviour:
   chainBreakForce: 11
   chainBreakTime: 0.1
   grapplingHook: {fileID: 1053261340617083234}
-  hookLaunchSFX:
-    Guid:
-      Data1: 1628037423
-      Data2: 1337461094
-      Data3: 1243076499
-      Data4: -1278483886
-    Path: event:/HookThrow
-  hookAttachSFX:
-    Guid:
-      Data1: -2010376697
-      Data2: 1154149302
-      Data3: 1526470299
-      Data4: -1715955784
-    Path: event:/HookAttach
-  reelSFX:
-    Guid:
-      Data1: 1770118837
-      Data2: 1127331170
-      Data3: -1947770480
-      Data4: -100379761
-    Path: event:/Reel
   springDistance: 0
   hookLaunched: 0
   isReeling: 0
