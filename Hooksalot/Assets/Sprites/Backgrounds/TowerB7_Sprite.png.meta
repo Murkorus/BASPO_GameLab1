@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c442c36144d2c204d8836a92f6c48567
+guid: 92a1703f8679d0f459a8f41de43eeb87
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1688175709172547996
-    second: CurvedTowerTest_BumpMap_0
+      213: 8996943050287907567
+    second: TowerB7_Sprite_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,7 +126,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CurvedTowerTest_BumpMap_0
+      name: TowerB7_Sprite_0
       rect:
         serializedVersion: 2
         x: 545
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c914ca7fcda9d6710800000000000000
-      internalID: 1688175709172547996
+      spriteID: fe284d059009bdc70800000000000000
+      internalID: 8996943050287907567
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      CurvedTowerTest_BumpMap_0: 1688175709172547996
+      TowerB7_Sprite_0: 8996943050287907567
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
