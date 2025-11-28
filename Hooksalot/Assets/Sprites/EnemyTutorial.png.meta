@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d3f608257c0f78848af7107876088e1b
+guid: 31983b0d48332a24982638144ca84f68
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6596568595968497536
-    second: Contorls_Tutorial_-_SirHooksAlot_0
+      213: -5302455327287216270
+    second: EnemyTutorial_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,7 +126,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Contorls_Tutorial_-_SirHooksAlot_0
+      name: EnemyTutorial_0
       rect:
         serializedVersion: 2
         x: 0
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 088ecc4efc74474a0800000000000000
-      internalID: -6596568595968497536
+      spriteID: 277faa339f4e966b0800000000000000
+      internalID: -5302455327287216270
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Contorls_Tutorial_-_SirHooksAlot_0: -6596568595968497536
+      EnemyTutorial_0: -5302455327287216270
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
