@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{c62c4731-36c1-4921-93d1-3f450bd46bbf}">
+		<property name="assetPath">
+			<value>Chain Throw.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>2.7008843537414964</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{206eedca-f08b-4202-a481-95dc0f711691}</destination>
+		</relationship>
+	</object>
+</objects>

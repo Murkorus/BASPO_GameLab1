@@ -5834,6 +5834,20 @@ MonoBehaviour:
   chainBreakForce: 11
   chainBreakTime: 0.1
   grapplingHook: {fileID: 1053261340617083234}
+  hookLaunchSFX:
+    Guid:
+      Data1: 1628037423
+      Data2: 1337461094
+      Data3: 1243076499
+      Data4: -1278483886
+    Path: event:/HookThrow
+  hookAttachSFX:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   springDistance: 0
   hookLaunched: 0
   isReeling: 0

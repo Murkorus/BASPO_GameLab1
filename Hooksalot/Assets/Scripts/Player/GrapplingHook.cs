@@ -1,5 +1,7 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using FMODUnity;
+using FMOD.Studio;
 
 public class GrapplingHook : MonoBehaviour
 {
@@ -15,9 +17,13 @@ public class GrapplingHook : MonoBehaviour
 
     [Header("References")]
     [SerializeField] GameObject grapplingHook;
+
+    [Header("Audio")]
+    [SerializeField] private EventReference hookLaunchSFX;
+    [SerializeField] private EventReference hookAttachSFX;
+
     private SpringJoint2D springJoint;
     private Rigidbody2D rb;
-    
 
     private Vector2 grapplePoint;
     public float springDistance;
@@ -51,28 +57,20 @@ public class GrapplingHook : MonoBehaviour
                 springJoint.distance = springDistance;
             }
         }*/
-        
+
         if (!hookLaunched) // If the hook is not currently attached to something, count down for the next time the player can launch the hook.
-        {
             timeSinceUnhooked += Time.deltaTime;
-        }
 
         if (isHookBeingLaunched) // If the hook launching animation should be playing, do the logic for extending the hook chain.
-        {
             ExtendHookChain();
-        }
 
         if (hookLaunched && !doChainBreak) // If the hook is currently attached to something, determine if the chain break process should begin.
-        {
             doChainBreak = CheckChainBreak();
-        }
 
         if (doChainBreak) // Counts down to when the chain should break after the breaking threshhold has been reached.
-        {
             chainBreakTimeTracker += Time.deltaTime;
-        }
 
-        if (doChainBreak && chainBreakTimeTracker > chainBreakTime) // If the chainbreak process has started and the countdown finished, finally break the chain.
+        if (doChainBreak && chainBreakTimeTracker > chainBreakTime) // If breaking process finished, break the chain.
         {
             doChainBreak = false;
             chainBreakTimeTracker = 0;
@@ -84,13 +82,16 @@ public class GrapplingHook : MonoBehaviour
         // Launch the hook when pressing left click.
         if (Input.GetMouseButtonDown(0))
         {
-            if (!isHookBeingLaunched) // Don't run the SetGrapplePoint function if the player is currently trying to launch the hook
+            if (!isHookBeingLaunched) // Don't run if currently launching
             {
                 if (SetGrapplePoint() && timeSinceUnhooked >= hookCooldown)
                 {
                     grapplingHook.transform.position = grapplePoint;
                     grapplingHook.transform.parent = hookLaunched ? null : transform;
                     isHookBeingLaunched = true;
+
+                    // Play hook launch sound
+                    RuntimeManager.PlayOneShot(hookLaunchSFX, transform.position);
                 }
             }
         }
@@ -100,20 +101,20 @@ public class GrapplingHook : MonoBehaviour
         {
             SwitchHookState();
         }
-        else if(Input.GetMouseButtonUp(0) && isHookBeingLaunched)
+        else if (Input.GetMouseButtonUp(0) && isHookBeingLaunched)
         {
             hookLaunchDistanceTraveled = 0;
             isHookBeingLaunched = false;
         }
 
-        // Reel in the player when pressing right cick.
+        // Reel in the player when pressing right click.
         if (Input.GetMouseButton(1))
         {
             reelDirection = -1;
             isReeling = true;
         }
-        
-        if(Input.GetMouseButtonUp(1))
+
+        if (Input.GetMouseButtonUp(1))
         {
             reelDirection = 1;
             isReeling = true;
@@ -121,21 +122,19 @@ public class GrapplingHook : MonoBehaviour
 
         if (isReeling)
         {
-            if(reelDirection == -1)
+            if (reelDirection == -1)
             {
                 springDistance = Mathf.Clamp(springDistance - Time.deltaTime * reelingSpeed, 0.05f, distanceWhenHooked);
             }
-            else if(reelDirection == 1)
+            else if (reelDirection == 1)
             {
-                Debug.Log("B");
                 springDistance = Mathf.Clamp(Vector2.Distance(grapplePoint, transform.position), 0.05f, distanceWhenHooked);
                 springJoint.dampingRatio = 0;
             }
             springJoint.distance = springDistance;
 
-            if (springDistance <= 0.05f || springDistance >= distanceWhenHooked || hookLaunched == false)
+            if (springDistance <= 0.05f || springDistance >= distanceWhenHooked || !hookLaunched)
             {
-                Debug.Log("C");
                 isReeling = false;
                 reelDirection = 0;
                 springJoint.dampingRatio = originalDampingRatio;
@@ -157,9 +156,8 @@ public class GrapplingHook : MonoBehaviour
             grappledObject = hit.collider.gameObject;
         }
         else
-        {
             grappledObject = null;
-        }
+
         grapplePoint = tempGrapplePoint;
         springDistance = Vector2.Distance(transform.position, grapplePoint);
         return successfulGrapple;
@@ -175,28 +173,21 @@ public class GrapplingHook : MonoBehaviour
         springJoint.distance = springDistance;
         grapplingHook.transform.position = grapplePoint;
         grapplingHook.transform.parent = hookLaunched ? null : transform;
+
+        if (hookLaunched)
+        {
+            // Play hook impact/attach sound
+            RuntimeManager.PlayOneShot(hookAttachSFX, grapplePoint);
+        }
     }
 
     // Returns whether or not the chain should break
     private bool CheckChainBreak()
     {
-        Vector2 chainVector = (Vector2)transform.position - grapplePoint; // Vector pointing from the grapple point to the player, magnitude is length between those points.
+        Vector2 chainVector = (Vector2)transform.position - grapplePoint;
         chainVector.Normalize();
-        // Calculate dot product of player velocity and chainVector to find out if the chain should break
         float dotProduct = rb.linearVelocity.x * chainVector.x + rb.linearVelocity.y * chainVector.y;
-        if (dotProduct > chainBreakForce)
-        {
-            if (GameManager.debugMode)
-            {
-                Debug.Log($"Chain broke at velocity {rb.linearVelocity.magnitude}, as it exceeded the limit of {chainBreakForce}.");
-            }
-            
-            return true;
-        }
-        else
-        {
-            return false;
-        }
+        return dotProduct > chainBreakForce;
     }
 
     private void ExtendHookChain()
@@ -209,7 +200,7 @@ public class GrapplingHook : MonoBehaviour
             springDistance = Vector2.Distance(transform.position, grapplePoint);
             SwitchHookState();
         }
-        else if (hookLaunchDistanceTraveled > maxDistance) // If the hook has extended further than the maximum distance, the grapple has failed.
+        else if (hookLaunchDistanceTraveled > maxDistance) // Grapple failed
         {
             isHookBeingLaunched = false;
             hookLaunchDistanceTraveled = 0;
