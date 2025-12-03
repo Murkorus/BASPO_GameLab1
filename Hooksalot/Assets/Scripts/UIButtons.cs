@@ -47,7 +47,10 @@ public class UIButtons : MonoBehaviour
             tutorialBackground.SetActive(false);
             tutorialFirstPicture.SetActive(false);
             tutorialRightArrow.SetActive(false);
+            tutorialThirdPicture.SetActive(false);
+            tutorialSecondPicture.SetActive(false);
             tutorialActive = false;
+            rightarrowActive = 1;
         }
 
 
