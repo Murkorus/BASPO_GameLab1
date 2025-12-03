@@ -3296,7 +3296,7 @@ MonoBehaviour:
   minSpeed: 0.5
   maxSpeed: 10
   distanceBasedSpeedScale: 3
-  speed: 0.5
+  speed: 0.2
   startTimeDelay: 5
   startHeightDelay: 5
   destructionBuffer: -1
@@ -5869,7 +5869,7 @@ MonoBehaviour:
   maxDistance: 12
   distanceWhenHooked: 0
   reelingSpeed: 15
-  hookCooldown: 0.5
+  hookCooldown: 0.3
   hookLaunchSpeed: 50
   chainBreakForce: 11
   chainBreakTime: 0.1
@@ -6062,9 +6062,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3c1eec49f06fb744b671bd41a6e4e3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Health
-  hp: 8
-  regenCooldown: 5
-  regenSpeed: 0.25
+  hp: 12
+  regenCooldown: 3
+  regenSpeed: 0.5
   regenTimer: 0
   vignette: {fileID: 1883583837}
   corruptionVeins: {fileID: 1669734455}
