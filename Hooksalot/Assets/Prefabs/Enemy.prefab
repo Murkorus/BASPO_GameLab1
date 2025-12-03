@@ -118,7 +118,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.0000007301568, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_LocalScale: {x: 1.3, y: 1.3, z: 1.3}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 5400613236225590373}
@@ -182,8 +182,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e74e25fc635281143bd23815b5cecb02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyMovement
-  enemySpeed: 3
-  maxChaseDistance: 13
+  enemySpeed: 2
+  maxChaseDistance: 7
   maximumSpeed: 7
   playerTransform: {fileID: 878972344969134583, guid: e4e59fd7d46a0ef4f92419a285c997db, type: 3}
 --- !u!1 &2965683900001079299
@@ -361,7 +361,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fa941064af16ea47ae21bc98a733d3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SuicideEnemy
-  ExplosionSize: 15
+  ExplosionSize: 10
 --- !u!1 &6429096374252775759
 GameObject:
   m_ObjectHideFlags: 0
